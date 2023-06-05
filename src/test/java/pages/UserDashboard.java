@@ -11,8 +11,6 @@ public class UserDashboard {
     }
 
 
-    @FindBy(css= ".fas.fa-sign-out-alt")
-    public WebElement logoutButton;
 
 
 }
