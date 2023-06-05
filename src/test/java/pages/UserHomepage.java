@@ -35,7 +35,7 @@ public class UserHomepage {
 
     // Anasayfa login button
     @FindBy(xpath = "//*[text()='Login']")
-    public WebElement loginButton;
+    public WebElement loginLink;
 
     // Header Logo
     @FindBy(xpath = "//div[@class='logo']")
@@ -506,6 +506,149 @@ public class UserHomepage {
     @FindBy(xpath = "(//div[@class='footer-item mt_30'])[4]")
     public WebElement footerAddress;
 
+    @FindBy(xpath = "//div[@id='toast-container']")
+    public WebElement newsletterSubmitAlert;
+
+
+    // ++++++++++++ Filik *******************
+
+    //Footer'daki 'Terms and Conditions'
+    @FindBy(xpath = "//*[text()='Terms and Conditions']")
+    public WebElement footerTermsAndConditions;
+
+    //'Terms and Conditions' sayfa basligi
+    @FindBy(tagName = "h1")
+    public WebElement termsAndConditionsTitle;
+
+    //Footer'daki 'Privacy Policy'
+    @FindBy(xpath = "//*[text()='Privacy Policy']")
+    public WebElement footerPrivacyPolicy;
+
+    //'Privacy Policy' sayfa basligi
+    @FindBy(tagName = "h1")
+    public WebElement privacyPolicyTitle;
+
+
+    // ************* OGUNNNN ***************
+
+    // Body Item Our Services International Tour
+    @FindBy(xpath = "(//h4)[1]")
+    public WebElement servicesFirstItem;
+
+    // Body Item Our Services Advantage Tour
+    @FindBy(xpath = "(//h4)[2]")
+    public WebElement servicesSecondItem;
+
+    // Body Item Our Services International Tour
+    @FindBy(xpath = "(//h4)[3]")
+    public WebElement servicesFirstItem1;
+
+    // Body Item Our Services International Tour
+    @FindBy(xpath = "(//h4)[4]")
+    public WebElement servicesFirstItem2;
+
+    // Body Item Our Services International Tour
+    @FindBy(xpath = "(//h4)[5]")
+    public WebElement servicesFirstItem3;
+
+    // Body Item Our Services International Tour
+    @FindBy(xpath = "(//h4)[6]")
+    public WebElement servicesFirstItem4;
+
+
+    @FindBy(xpath = "//img")
+    public List<WebElement> destinationsList;
+
+
+    @FindBy(xpath = "//h1")
+    public WebElement packagesTitle;
+
+
+    @FindBy(xpath = "(//div[@class='photo-title'])[1]")
+    public WebElement packagesPhotoTitle1;
+
+
+    @FindBy(xpath = "(//div[@class='photo-title'])[2]")
+    public WebElement packagesPhotoTitle2;
+
+
+    @FindBy(xpath = "(//div[@class='photo-title'])[3]")
+    public WebElement packagesPhotoTitle3;
+
+
+    @FindBy(xpath = "(//div[@class='photo-title'])[4]")
+    public WebElement packagesPhotoTitle4;
+
+    @FindBy(xpath = "(//div[@class='photo-title'])[5]")
+    public WebElement packagesPhotoTitle5;
+
+
+    @FindBy(xpath = "(//div[@class='photo-title'])[6]")
+    public WebElement packagesPhotoTitle6;
+
+
+    @FindBy(xpath = "(//div[@class='photo-title'])[7]")
+    public WebElement packagesPhotoTitle7;
+
+
+    @FindBy(xpath = "(//div[@class='photo-title'])[8]")
+    public WebElement packagesPhotoTitle8;
+
+
+    @FindBy(xpath = "(//div[@class='photo-title'])[9]")
+    public WebElement packagesPhotoTitle9;
+
+
+    @FindBy(xpath = "//*[text()='OUR MISSION']")
+    public WebElement aboutusTextTitle;
+
+
+    @FindBy(xpath = "//*[text()='OUR VISION']")
+    public WebElement aboutusTextTitle1;
+
+
+    @FindBy(tagName = "h1")
+    public WebElement faqTitle;
+
+
+    @FindBy(tagName = "h1")
+    public WebElement contactTitle;
+
+
+    @FindBy(xpath = "//input[@name='traveller_name']")
+    public WebElement registrationNameBox;
+
+    @FindBy(xpath = "//input[@name='traveller_email']")
+    public WebElement registrationEmailBox;
+
+    @FindBy(xpath = "//input[@name='traveller_password']")
+    public WebElement registrationPasswordBox;
+
+    @FindBy(xpath = "//button[@type='submit']")
+    public WebElement registrationSubmitButton;
+
+
+    @FindBy(xpath = "//input[@name='traveller_email']")
+    public WebElement loginEmailBox;
+
+
+    @FindBy(xpath = "//input[@name='traveller_password']")
+    public WebElement loginPasswordBox;
+
+
+    @FindBy(xpath = "//button[@type='submit']")
+    public WebElement loginSubmitButton;
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -514,11 +657,8 @@ public class UserHomepage {
 
 
     // login email kutussu
-    @FindBy(xpath = "//input[@name='traveller_email']")
-    public WebElement emailBox;
 
-    @FindBy(xpath = "//input[@name='traveller_password']")
-    public WebElement passwordKutusu;
+
     @FindBy(xpath = "//button[@name='form1']")
     public WebElement girisLoginButtonu;
 
