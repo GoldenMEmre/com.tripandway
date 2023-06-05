@@ -30,6 +30,10 @@ public class US_01_Home {
         Assert.assertEquals(expectedTitle,actualTitle);
         Assert.assertTrue(homeTitle.isDisplayed());
 
+
+
+
+
         // Driver kapatilir
         Driver.closeDriver();
     }

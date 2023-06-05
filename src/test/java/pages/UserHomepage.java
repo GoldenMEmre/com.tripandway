@@ -24,7 +24,7 @@ public class UserHomepage {
     @FindBy(xpath = "//div[@class='top-header-left']")
     public WebElement headerConnection;
 
-    // Header Registration Button and Login Button
+    // Header Registration Button and Login ButtonEN
     @FindBy(xpath = "//div[@class='top-header-right']")
     public WebElement headerRegAndLog;
 
