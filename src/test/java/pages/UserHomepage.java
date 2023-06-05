@@ -507,7 +507,7 @@ public class UserHomepage {
     public WebElement footerAddress;
 
     @FindBy(xpath = "//div[@id='toast-container']")
-    public WebElement newsletterSubmitAlert;
+    public WebElement newsletterSuccessfulAlert;
 
 
     // ++++++++++++ Filik *******************
@@ -573,7 +573,7 @@ public class UserHomepage {
 
 
     @FindBy(xpath = "(//div[@class='photo-title'])[3]")
-    public WebElement packagesPhotoTitle3;
+    public WebElement packagesPhotoTitleIstanbul;
 
 
     @FindBy(xpath = "(//div[@class='photo-title'])[4]")
@@ -618,18 +618,23 @@ public class UserHomepage {
     @FindBy(xpath = "//input[@name='traveller_name']")
     public WebElement registrationNameBox;
 
+
     @FindBy(xpath = "//input[@name='traveller_email']")
     public WebElement registrationEmailBox;
 
+
     @FindBy(xpath = "//input[@name='traveller_password']")
     public WebElement registrationPasswordBox;
+
 
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement registrationSubmitButton;
 
 
+
     @FindBy(xpath = "//input[@name='traveller_email']")
     public WebElement loginEmailBox;
+
 
 
     @FindBy(xpath = "//input[@name='traveller_password']")
@@ -639,43 +644,5 @@ public class UserHomepage {
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement loginSubmitButton;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    // login email kutussu
-
-
-    @FindBy(xpath = "//button[@name='form1']")
-    public WebElement girisLoginButtonu;
-
-
-    @FindBy(xpath = "(//div[@class='footer-item mt_30'])[4]")
-    public WebElement addressElement;
-
-    @FindBy(xpath = "//a[@target='_blank'])[38]")
-    public WebElement adressFacebookButton;
-
-
-    @FindBy(xpath = "(//a[@target='_blank'])[39]")
-    public WebElement adressTwitterButton;
-
-
-    //Registration Name Textbox
-
-    //Home--> Destination/Bangkok experience
 }
 
