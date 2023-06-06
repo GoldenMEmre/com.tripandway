@@ -13,6 +13,9 @@ public class UserDashboard {
 
     @FindBy(xpath = "//*[text()='Completed Orders']")
     public WebElement successfullLogin;
+    @FindBy(xpath = "(//*[text()='Completed'])[1]")
+    public WebElement paymentHistoryCompleted;
+
 
 
     @FindBy(xpath = "//a[text()='Update Profile']")
