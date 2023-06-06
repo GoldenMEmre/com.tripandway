@@ -23,11 +23,17 @@ public class TC_23 {
         UserHomepage userHomepage = new UserHomepage();
         userHomepage.loginLink.click();
 
-        userHomepage.registrationEmailBox.sendKeys(ConfigReader.getProperty("loginEmail"));
-        userHomepage.registrationNameBox.sendKeys(ConfigReader.getProperty("loginPassword"));
+        // email tikla ve maili gonder
+        userHomepage.loginEmailBox.sendKeys(ConfigReader.getProperty("loginEmail"));
+        // passwrodu tikla ve password gonder
+        userHomepage.loginPasswordBox.sendKeys(ConfigReader.getProperty("loginPassword"));
+        // cookies icin accept butonu tikla
         userHomepage.cookiesAcceptButton.click();
-        userHomepage.girisLoginButtonu.click();
+        // login buttonuna tikla
+        userHomepage.loginSubmitButton.click();
+
         UserDashboard userDashboard=new UserDashboard();
+        // logout buttonunu tikla
         userDashboard.logoutButton.click();
 
         String expectedUrl="https://qa.tripandway.com/traveller/login";
