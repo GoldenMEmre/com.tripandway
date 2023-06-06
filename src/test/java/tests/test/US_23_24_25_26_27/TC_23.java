@@ -21,10 +21,10 @@ public class TC_23 {
 
 
         UserHomepage userHomepage = new UserHomepage();
-        userHomepage.loginButton.click();
+        userHomepage.loginLink.click();
 
-        userHomepage.emailBox.sendKeys(ConfigReader.getProperty("loginEmail"));
-        userHomepage.passwordKutusu.sendKeys(ConfigReader.getProperty("loginPassword"));
+        userHomepage.registrationEmailBox.sendKeys(ConfigReader.getProperty("loginEmail"));
+        userHomepage.registrationNameBox.sendKeys(ConfigReader.getProperty("loginPassword"));
         userHomepage.cookiesAcceptButton.click();
         userHomepage.girisLoginButtonu.click();
         UserDashboard userDashboard=new UserDashboard();
