@@ -24,7 +24,7 @@ public class UserHomepage {
     @FindBy(xpath = "//div[@class='top-header-left']")
     public WebElement headerConnection;
 
-    // Header Registration Button and Login ButtonEN
+    // Header Registration Button and Login Button
     @FindBy(xpath = "//div[@class='top-header-right']")
     public WebElement headerRegAndLog;
 
@@ -81,7 +81,7 @@ public class UserHomepage {
 
 
 
-    // Body Slider Item
+    // Body Item Slider
     @FindBy(xpath = "(//div[@class='slider-bg'])[5]")
     public WebElement sliderItem;
 
@@ -93,7 +93,7 @@ public class UserHomepage {
     @FindBy(xpath = "(//*[@class='owl-prev'])[1]")
     public WebElement sliderItemPrev;
 
-    // Slider Item Read More Button
+    // Slider Item Read Read More Button
     @FindBy(xpath = "(//*[text()='Read More'])[1]")
     public WebElement sliderItemReadmore;
 
@@ -102,7 +102,7 @@ public class UserHomepage {
 
 
 
-    // Body Item Our Services
+    // Body Title Our Services
     @FindBy(xpath = "(//div[@class='headline'])[1]")
     public WebElement bodyOurServices;
 
@@ -115,50 +115,50 @@ public class UserHomepage {
     @FindBy(xpath = "(//h4)[2]")
     public WebElement bodyOurServicesSecondItem;
 
-    // Body Item Our Services International Tour
+    // Body Item Our Services Culture Tour
     @FindBy(xpath = "(//h4)[3]")
-    public WebElement bodyOurServicesFirstItem1;
+    public WebElement bodyOurServicesThirdItem;
 
-    // Body Item Our Services International Tour
+    // Body Item Our Services Businness Tour
     @FindBy(xpath = "(//h4)[4]")
-    public WebElement bodyOurServicesFirstItem2;
+    public WebElement bodyOurServicesFourthItem;
 
-    // Body Item Our Services International Tour
+    // Body Item Our Services Health Tour
     @FindBy(xpath = "(//h4)[5]")
-    public WebElement bodyOurServicesFirstItem3;
+    public WebElement bodyOurServicesFifthItem;
 
-    // Body Item Our Services International Tour
+    // Body Item Our Services Religious Tour
     @FindBy(xpath = "(//h4)[6]")
-    public WebElement bodyOurServicesFirstItem4;
+    public WebElement bodyOurServicesSixthItem;
 
 
 
 
 
-
+    // Body Title Featured Packages
     @FindBy(xpath = "(//div[@class='headline'])[2]")
     public WebElement bodyFeaturedPackages;
 
-
+    //Featured Packages First Item
     @FindBy(xpath = "(//h4)[7]")
-    public WebElement bodyFeaturedPackagesfirstItem;
+    public WebElement bodyFeaturedPackagesFirstItem;
 
-
+    //Featured Packages Second Item
     @FindBy(xpath = "(//h4)[8]")
-    public WebElement bodyFeaturedPackagesfirstItem1;
+    public WebElement bodyFeaturedPackagesSecondItem;
 
-
+    //Featured Packages Third Item
     @FindBy(xpath = "(//h4)[9]")
-    public WebElement bodyFeaturedPackagesfirstItem2;
+    public WebElement bodyFeaturedPackagesThirdItem;
 
-
+    //Featured Packages Fourth Item
     @FindBy(xpath = "(//h4)[10]")
-    public WebElement bodyFeaturedPackagesfirstItem3;
+    public WebElement bodyFeaturedPackagesFourthItem;
 
 
 
 
-
+    // Sayisal Bilgiler
     @FindBy(xpath = "//div[@class='bg-counterup']")
     public WebElement bodyCounter;
 
@@ -167,61 +167,61 @@ public class UserHomepage {
 
 
 
-
+    //Body Destination Title
     @FindBy(xpath = "(//div[@class='headline'])[3]")
-    public WebElement bodyDestination;
+    public WebElement bodyTitleDestination;
 
-
+    //Body Destination Item First
     @FindBy(xpath = "(//div[@class='photo-title'])[1]")
-    public WebElement bodyDestinationBangkok;
+    public WebElement bodyDestinationFirstItem;
 
-
+    //Body Destination Item First Buyutme
     @FindBy(xpath = "(//a[@class='magnific'])[1]")
-    public WebElement bodyDestinationBangkokBuyutme;
+    public WebElement bodyDestinationFirstItemMagnify;
 
-
+    //Body Destination Item Second
     @FindBy(xpath = "(//div[@class='photo-title'])[2]")
-    public WebElement bodyDestinationBangkok1;
+    public WebElement bodyDestinationSecondItem;
 
-
+    //Body Destination Item Second Buyutme
     @FindBy(xpath = "(//a[@class='magnific'])[2]")
-    public WebElement bodyDestinationBangkokBuyutme1;
+    public WebElement bodyDestinationSecondItemMagnify;
 
-
+    //Body Destination Item Third
     @FindBy(xpath = "(//div[@class='photo-title'])[3]")
-    public WebElement bodyDestinationBangkok2;
+    public WebElement bodyDestinationThirdItem;
 
-
+    //Body Destination Item Third Buyutme
     @FindBy(xpath = "(//a[@class='magnific'])[3]")
-    public WebElement bodyDestinationBangkokBuyutme2;
+    public WebElement bodyDestinationBangkokThirdItemMagnify;
 
-
+    //Body Destination Item Fourth
     @FindBy(xpath = "(//div[@class='photo-title'])[4]")
-    public WebElement bodyDestinationBangkok3;
+    public WebElement bodyDestinationFourthItem;
 
-
+    //Body Destination Item Fourth Buyutme
     @FindBy(xpath = "(//a[@class='magnific'])[4]")
-    public WebElement bodyDestinationBangkokBuyutme3;
+    public WebElement bodyDestinationFourthItemMagnify;
 
-
+    //Body Destination Item Fifth
     @FindBy(xpath = "(//div[@class='photo-title'])[5]")
-    public WebElement bodyDestinationBangkok4;
+    public WebElement bodyDestinationFifthItem;
 
-
+    //Body Destination Item Fifth Buyutme
     @FindBy(xpath = "(//a[@class='magnific'])[5]")
-    public WebElement bodyDestinationBangkokBuyutme4;
+    public WebElement bodyDestinationFifthItemMagnify;
 
-
+    //Body Destination Item Sixth
     @FindBy(xpath = "(//div[@class='photo-title'])[6]")
-    public WebElement bodyDestinationBangkok5;
+    public WebElement bodyDestinationSixthItem;
 
-
+    //Body Destination Item Sixth Buyutme
     @FindBy(xpath = "(//a[@class='magnific'])[6]")
-    public WebElement bodyDestinationBangkokBuyutme5;
+    public WebElement bodyDestinationSixthItemMagnify;
 
-
+    //Body Destination See All Destinations Item
     @FindBy(xpath = "//*[text()='See All Destinations']")
-    public WebElement seeall;
+    public WebElement bodyDestinationSeeAllDestinations;
 
 
 
@@ -233,78 +233,78 @@ public class UserHomepage {
 
 
 
-
+    //Body Team Members Title
     @FindBy(xpath = "(//div[@class='headline'])[4]")
-    public WebElement bodyTeamMembers;
+    public WebElement bodyTeamMembersTitle;
 
-    // member1
+    // member1 foto
     @FindBy(xpath = "(//div[@class='team-photo'])[5]")
-    public WebElement bodyTeamMembers1;
+    public WebElement bodyTeamMember1Photo;
 
-
+    // member1 facebook link
     @FindBy(xpath = "(//div[@class='team-social'])[5]//ul//li[1]")
-    public WebElement bodyTeamMembers1facebook;
+    public WebElement bodyTeamMember1FacebookLink;
 
-
+    // member1 twitter link
     @FindBy(xpath = "(//div[@class='team-social'])[5]//ul//li[2]")
-    public WebElement bodyTeamMembers1facebook1;
+    public WebElement bodyTeamMemberTwitterLink;
 
-
+    //member1 instagram link
     @FindBy(xpath = "(//div[@class='team-social'])[5]//ul//li[3]")
-    public WebElement bodyTeamMembers1facebook2;
+    public WebElement bodyTeamMember1InstagramLink;
 
 
 
-    // member2
+    // member2 foto
     @FindBy(xpath = "(//div[@class='team-photo'])[6]")
-    public WebElement bodyTeamMembers2;
+    public WebElement bodyTeamMember2Photo;
 
-
+    // member2 facebook link
     @FindBy(xpath = "(//div[@class='team-social'])[6]//ul//li[1]")
-    public WebElement bodyTeamMembers2facebook;
+    public WebElement bodyTeamMember2FacebookLink;
 
-
+    // member2 twitter link
     @FindBy(xpath = "(//div[@class='team-social'])[6]//ul//li[2]")
-    public WebElement bodyTeamMembers2facebook1;
+    public WebElement bodyTeamMember2TwitterLink;
 
-
+    //member2 instagram link
     @FindBy(xpath = "(//div[@class='team-social'])[6]//ul//li[3]")
-    public WebElement bodyTeamMembers2facebook2;
+    public WebElement bodyTeamMember2InstagramLink;
 
 
 
-    // member3
+    // member3 foto
     @FindBy(xpath = "(//div[@class='team-photo'])[7]")
-    public WebElement bodyTeamMembers3;
+    public WebElement bodyTeamMember3Photo;
 
-
+    // member3 facebook link
     @FindBy(xpath = "(//div[@class='team-social'])[7]//ul//li[1]")
-    public WebElement bodyTeamMembers3facebook;
+    public WebElement bodyTeamMember3FacebookLink;
 
-
+    // member3 twitter link
     @FindBy(xpath = "(//div[@class='team-social'])[7]//ul//li[2]")
-    public WebElement bodyTeamMembers3facebook1;
+    public WebElement bodyTeamMember3TwitterLink;
 
-
+    //member3 instagram link
     @FindBy(xpath = "(//div[@class='team-social'])[7]//ul//li[3]")
-    public WebElement bodyTeamMembers3facebook2;
+    public WebElement bodyTeamMember3InstagramLink;
 
 
-    // member4
+    // member4 foto
     @FindBy(xpath = "(//div[@class='team-photo'])[8]")
-    public WebElement bodyTeamMembers4;
+    public WebElement bodyTeamMember4Photo;
 
-
+    // member4 facebook link
     @FindBy(xpath = "(//div[@class='team-social'])[8]//ul//li[1]")
-    public WebElement bodyTeamMembers4facebook;
+    public WebElement bodyTeamMember4FacebookLink;
 
-
+    // member4 twitter link
     @FindBy(xpath = "(//div[@class='team-social'])[8]//ul//li[2]")
-    public WebElement bodyTeamMembers4facebook1;
+    public WebElement bodyTeamMember4TwitterLink;
 
-
+    //member4 instagram link
     @FindBy(xpath = "(//div[@class='team-social'])[8]//ul//li[3]")
-    public WebElement bodyTeamMembers4facebook2;
+    public WebElement bodyTeamMember4InstagramLink;
 
 
 
@@ -312,23 +312,23 @@ public class UserHomepage {
 
 
 
-
+    //Body Testimonial Title
     @FindBy(xpath = "(//div[@class='headline'])[5]")
-    public WebElement bodyTestimonial;
+    public WebElement bodyTestimonialTitle;
 
-
+    // Body Testimonial1
     @FindBy(xpath = "((//div[@class='owl-dots'])[3]//div[1]")
     public WebElement bodyTestimonial1;
 
-
+    // Body Testimonial2
     @FindBy(xpath = "((//div[@class='owl-dots'])[3]//div[2]")
     public WebElement bodyTestimonial2;
 
-
+    // Body Testimonial3
     @FindBy(xpath = "(//div[@class='owl-dots'])[3]//div[3]")
     public WebElement bodyTestimonial3;
 
-
+    // // Body Testimonial4
     @FindBy(xpath = "(//div[@class='owl-dots'])[3]//div[4]")
     public WebElement bodyTestimonial4;
 
@@ -338,84 +338,84 @@ public class UserHomepage {
 
 
 
-
+    //Body Latest Blog Title
     @FindBy(xpath = "(//div[@class='headline'])[6]")
-    public WebElement bodyLatestblog;
+    public WebElement bodyLatestBlogTitle;
 
-
+    // Body Latest Blog 1
     @FindBy(xpath = " (//div[@class='blog-image'])[4]")
-    public WebElement bodyLatestblog1;
+    public WebElement bodyLatestBlog1Link;
     // (//div[@class='button mt_15'])[5] >> read more // boyle de locate edebilirsin
-
+    // Body Latest Blog 2
     @FindBy(xpath = " (//div[@class='blog-image'])[5]")
-    public WebElement bodyLatestblog2;
+    public WebElement bodyLatestBlog2Link;
     // (//div[@class='button mt_15'])[5] >> read more // boyle de locate edebilirsin
 
-
+    // Body Latest Blog 3
     @FindBy(xpath = " (//div[@class='blog-image'])[6]")
-    public WebElement bodyLatestblog3;
+    public WebElement bodyLatestBlog3Link;
     // (//div[@class='button mt_15'])[5] >> read more // boyle de locate edebilirsin
 
-
+    // Body Latest Blog 4
     @FindBy(xpath = " (//div[@class='blog-image'])[7]")
-    public WebElement bodyLatestblog4;
+    public WebElement bodyLatestBlog4Link;
     // (//div[@class='button mt_15'])[5] >> read more // boyle de locate edebilirsin
 
-
+    // Body Latest Blog 5
     @FindBy(xpath = " (//div[@class='blog-image'])[8]")
-    public WebElement bodyLatestblog5;
+    public WebElement bodyLatestBlog5Link;
     // (//div[@class='button mt_15'])[5] >> read more // boyle de locate edebilirsin
 
-
+    // Body Latest Blog 6
     @FindBy(xpath = " (//div[@class='blog-image'])[9]")
-    public WebElement bodyLatestblog6;
+    public WebElement bodyLatestBlog6Link;
     // (//div[@class='button mt_15'])[5] >> read more // boyle de locate edebilirsin
 
 
 
 
-
+    //Body Our Client Title
     @FindBy(xpath = "(//div[@class='headline'])[7]")
-    public WebElement bodyOurClint;
+    public WebElement bodyOurClintTitle;
 
 
 
 
 
-
+    //Body Newsletter Title
     @FindBy(xpath = "(//div[@class='headline'])[8]")
-    public WebElement bodyNewsletter;
+    public WebElement bodyNewsletterTitle;
 
-
+    //Body Newsletter Email Kutusu
     @FindBy(xpath = "//input[@name='subs_email']")
-    public WebElement bodyNewsletterEmail;
+    public WebElement bodyNewsletterEmailBox;
 
-
+    //Body Newsletter Email Submit Butonu
     @FindBy(xpath = "//input[@type='submit']")
-    public WebElement bodyNewsletterSubmit;
+    public WebElement bodyNewsletterSubmitButton;
 
 
 
 
-
+    // Footer Featured Packages Title
     @FindBy(xpath = "//*[text()='Featured Packages']")
-    public WebElement footerFeaturedPackages;
+    public WebElement footerFeaturedPackagesTitle;
 
-
+    // Footer Featured Packages Item 1
     @FindBy(xpath = "(//div[@class='footer-item mt_30'])[1]//ul//li[1]")
-    public WebElement footerFeaturedPackages1;
+    public WebElement footerFeaturedPackagesItem1;
 
-
+    // Footer Featured Packages Item 2
     @FindBy(xpath = "(//div[@class='footer-item mt_30'])[1]//ul//li[2]")
-    public WebElement footerFeaturedPackages2;
+    public WebElement footerFeaturedPackagesItem2;
 
-
+    // Footer Featured Packages Item 3
     @FindBy(xpath = "(//div[@class='footer-item mt_30'])[1]//ul//li[3]")
-    public WebElement footerFeaturedPackages3;
+    public WebElement footerFeaturedPackagesItem3;
 
-
+    // Footer Featured Packages Item 4
     @FindBy(xpath = "(//div[@class='footer-item mt_30'])[1]//ul//li[1]")
-    public WebElement footerFeaturedPackages4;
+    public WebElement footerFeaturedPackagesItem4;
 
 
 
@@ -644,5 +644,56 @@ public class UserHomepage {
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement loginSubmitButton;
 
+
+
+    //------------Body Team Members Detail Links--------------
+
+    //Member1 Ayrinti
+    @FindBy(xpath ="//a[@href ='https://qa.tripandway.com/team-member/knox-mitchell'])[2]")
+    public WebElement bodyTeamMember1DetailLink;
+
+    //Member2 Ayrinti
+    @FindBy(xpath = "//a[@href ='https://qa.tripandway.com/team-member/zara-williams'])[2]")
+    public WebElement bodyTeamMember2DetailLink;
+
+    //Member3 Ayrinti
+    @FindBy(xpath ="//a[@href ='https://qa.tripandway.com/team-member/jaxon-green'])[2]")
+    public WebElement bodyTeamMember3DetailLink;
+
+    //Member4 Ayrinti
+    @FindBy(xpath = "//a[@href ='https://qa.tripandway.com/team-member/avery-johnson'])[2]")
+    public WebElement bodyTeamMember4DetailLink;
+
+
+
+    //------------Body Our Client İmages--------------
+
+    //Our Client İmage1
+    @FindBy(xpath = "//img[@src='https://qa.tripandway.com/public/uploads/client-1.png']")
+    public WebElement bodyOurClientImage1;
+
+    //Our Client İmage2
+    @FindBy(xpath = "//img[@src='https://qa.tripandway.com/public/uploads/client-2.png']")
+    public WebElement bodyOurClientImage2;
+
+    //Our Client İmage3
+    @FindBy(xpath = "//img[@src='https://qa.tripandway.com/public/uploads/client-3.png']")
+    public WebElement bodyOurClientImage3;
+
+    //Our Client İmage4
+    @FindBy(xpath = "//img[@src='https://qa.tripandway.com/public/uploads/client-4.png']")
+    public WebElement bodyOurClientImage4;
+
+    //Our Client İmage5
+    @FindBy(xpath = "//img[@src='https://qa.tripandway.com/public/uploads/client-5.png']")
+    public WebElement bodyOurClientImage5;
+
+    //Our Client İmage6
+    @FindBy(xpath = "//img[@src='https://qa.tripandway.com/public/uploads/client-6.png']")
+    public WebElement bodyOurClientImage6;
+
+    //Our Client İmage7
+    @FindBy(xpath = "//img[@src='https://qa.tripandway.com/public/uploads/client-7.png']")
+    public WebElement bodyOurClientImage7;
 }
 
