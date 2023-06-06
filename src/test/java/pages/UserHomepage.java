@@ -30,7 +30,7 @@ public class UserHomepage {
 
     //Anasayfa registration button
     @FindBy(xpath = "//*[text()='Registration']")
-    WebElement registrationLink;
+    public WebElement registrationLink;
 
 
     // Anasayfa login button
@@ -695,5 +695,8 @@ public class UserHomepage {
     //Our Client İmage7
     @FindBy(xpath = "//img[@src='https://qa.tripandway.com/public/uploads/client-7.png']")
     public WebElement bodyOurClientImage7;
+
+    @FindBy(xpath = "//div[@class='toast-message']")
+    public WebElement regAlreadyExistsMassage;
 }
 
