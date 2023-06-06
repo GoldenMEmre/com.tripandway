@@ -115,50 +115,50 @@ public class UserHomepage {
     @FindBy(xpath = "(//h4)[2]")
     public WebElement bodyOurServicesSecondItem;
 
-    // Body Item Our Services International Tour
+    // Body Item Our Services Culture Tour
     @FindBy(xpath = "(//h4)[3]")
-    public WebElement bodyOurServicesFirstItem1;
+    public WebElement bodyOurServicesThirdItem;
 
-    // Body Item Our Services International Tour
+    // Body Item Our Services Businness Tour
     @FindBy(xpath = "(//h4)[4]")
-    public WebElement bodyOurServicesFirstItem2;
+    public WebElement bodyOurServicesFourthItem;
 
-    // Body Item Our Services International Tour
+    // Body Item Our Services Health Tour
     @FindBy(xpath = "(//h4)[5]")
-    public WebElement bodyOurServicesFirstItem3;
+    public WebElement bodyOurServicesFifthItem;
 
-    // Body Item Our Services International Tour
+    // Body Item Our Services Religious Tour
     @FindBy(xpath = "(//h4)[6]")
-    public WebElement bodyOurServicesFirstItem4;
+    public WebElement bodyOurServicesSixthItem;
 
 
 
 
 
-
+    // Body Item Featured Packages
     @FindBy(xpath = "(//div[@class='headline'])[2]")
     public WebElement bodyFeaturedPackages;
 
-
+    //Featured Packages First Item
     @FindBy(xpath = "(//h4)[7]")
     public WebElement bodyFeaturedPackagesfirstItem;
 
-
+    //Featured Packages Second Item
     @FindBy(xpath = "(//h4)[8]")
     public WebElement bodyFeaturedPackagesfirstItem1;
 
-
+    //Featured Packages Third Item
     @FindBy(xpath = "(//h4)[9]")
     public WebElement bodyFeaturedPackagesfirstItem2;
 
-
+    //Featured Packages Fourth Item
     @FindBy(xpath = "(//h4)[10]")
     public WebElement bodyFeaturedPackagesfirstItem3;
 
 
 
 
-
+    // Sayisal Bilgiler
     @FindBy(xpath = "//div[@class='bg-counterup']")
     public WebElement bodyCounter;
 
@@ -167,11 +167,11 @@ public class UserHomepage {
 
 
 
-
+    //Body Destination
     @FindBy(xpath = "(//div[@class='headline'])[3]")
     public WebElement bodyDestination;
 
-
+    //Body Destination Item First
     @FindBy(xpath = "(//div[@class='photo-title'])[1]")
     public WebElement bodyDestinationBangkok;
 
@@ -179,7 +179,7 @@ public class UserHomepage {
     @FindBy(xpath = "(//a[@class='magnific'])[1]")
     public WebElement bodyDestinationBangkokBuyutme;
 
-
+    //Body Destination Item Second
     @FindBy(xpath = "(//div[@class='photo-title'])[2]")
     public WebElement bodyDestinationBangkok1;
 
@@ -187,7 +187,7 @@ public class UserHomepage {
     @FindBy(xpath = "(//a[@class='magnific'])[2]")
     public WebElement bodyDestinationBangkokBuyutme1;
 
-
+    //Body Destination Item Third
     @FindBy(xpath = "(//div[@class='photo-title'])[3]")
     public WebElement bodyDestinationBangkok2;
 
@@ -195,7 +195,7 @@ public class UserHomepage {
     @FindBy(xpath = "(//a[@class='magnific'])[3]")
     public WebElement bodyDestinationBangkokBuyutme2;
 
-
+    ////Body Destination Item Fourth
     @FindBy(xpath = "(//div[@class='photo-title'])[4]")
     public WebElement bodyDestinationBangkok3;
 
@@ -203,7 +203,7 @@ public class UserHomepage {
     @FindBy(xpath = "(//a[@class='magnific'])[4]")
     public WebElement bodyDestinationBangkokBuyutme3;
 
-
+    //Body Destination Item Fifth
     @FindBy(xpath = "(//div[@class='photo-title'])[5]")
     public WebElement bodyDestinationBangkok4;
 
@@ -211,7 +211,7 @@ public class UserHomepage {
     @FindBy(xpath = "(//a[@class='magnific'])[5]")
     public WebElement bodyDestinationBangkokBuyutme4;
 
-
+    //Body Destination Item Sixth
     @FindBy(xpath = "(//div[@class='photo-title'])[6]")
     public WebElement bodyDestinationBangkok5;
 
@@ -219,9 +219,9 @@ public class UserHomepage {
     @FindBy(xpath = "(//a[@class='magnific'])[6]")
     public WebElement bodyDestinationBangkokBuyutme5;
 
-
+    //Body Destination See All Destinations Item
     @FindBy(xpath = "//*[text()='See All Destinations']")
-    public WebElement seeall;
+    public WebElement bodyDestinationSeeAllDestinations;
 
 
 
