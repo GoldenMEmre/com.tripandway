@@ -50,6 +50,7 @@ public class US_29_Blogs {
 
         //Blog Photo kismindan fotograf eklenir.
 
+
         //Select Category dropbox'undan uygun secenek secilir.
 
         //Show Comment dropbox'undan uygun secenek secilir.
