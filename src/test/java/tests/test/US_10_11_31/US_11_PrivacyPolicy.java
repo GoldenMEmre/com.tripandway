@@ -9,13 +9,13 @@ import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
 
-public class US_11_Privacy_Policy {
+public class US_11_PrivacyPolicy {
     /*
         Bir ziyaretçi olarak  sitenin gizlilik politikalarının sayfasını görüntüleyebildiğimi doğrulayabilmeliyim
     */
 
     @Test
-    public void TC_13() {
+    public void TC13() {
         // browser ile tripandway anasayfaya gidilir
         Driver.getDriver().get(ConfigReader.getProperty("tripUrl"));
 

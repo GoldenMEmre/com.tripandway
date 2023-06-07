@@ -7,14 +7,14 @@ import pages.AdminDashboard;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-public class US_31_Admin_Packages {
+public class US_31_AdminPackages {
     /*
         Admin girişi yaptıktan sonra Packages kısmına yeni package ekleyip
         eklediğim package'in düzenlenebildiğini ve silinebildiğini sırayla doğrulayabilmeliyim
      */
 
     @Test
-    public void TC_47() {
+    public void TC47() {
         //browser ile 'https://qa.tripandway.com/admin/login' sayfasina gidilir
         Driver.getDriver().get(ConfigReader.getProperty("adminUrl"));
 
@@ -44,7 +44,7 @@ public class US_31_Admin_Packages {
     }
 
     @Test
-    public void TC_48() {
+    public void TC48() {
         //browser ile 'https://qa.tripandway.com/admin/login' sayfasina gidilir
         Driver.getDriver().get(ConfigReader.getProperty("adminUrl"));
 
@@ -75,7 +75,7 @@ public class US_31_Admin_Packages {
 
         //Photo kismina Local'den bir resim eklenir
         String differentPath = System.getProperty("user.dir");
-        String samePath = "/src/test/java/tests/US_10_11_31/image.png";
+        String samePath = "/src/test/java/tests/test/US_10_11_31/image.png";
         String filePath= differentPath+samePath;
         adminDashboard.addPackagePhotoButton.sendKeys(filePath);
 
@@ -140,7 +140,7 @@ public class US_31_Admin_Packages {
     }
 
     @Test
-    public void TC_49() {
+    public void TC49() {
         //browser ile 'https://qa.tripandway.com/admin/login' sayfasina gidilir
         Driver.getDriver().get(ConfigReader.getProperty("adminUrl"));
 
@@ -180,7 +180,7 @@ public class US_31_Admin_Packages {
 
         //Photo kismina Local'den bir resim eklenir
         String differentPath = System.getProperty("user.dir");
-        String samePath = "/src/test/java/tests/US_10_11_31/image1.png";
+        String samePath = "/src/test/java/tests/test/US_10_11_31/image1.png";
         String filePath = differentPath + samePath;
         adminDashboard.editPackagePhotoButton.sendKeys(filePath);
 
@@ -260,7 +260,7 @@ public class US_31_Admin_Packages {
     }
 
     @Test
-    public void TC_50() {
+    public void TC50() {
         //browser ile 'https://qa.tripandway.com/admin/login' sayfasina gidilir
         Driver.getDriver().get(ConfigReader.getProperty("adminUrl"));
 
