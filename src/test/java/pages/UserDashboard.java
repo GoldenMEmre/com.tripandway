@@ -110,7 +110,7 @@ public class UserDashboard {
     public WebElement logoutButton;
 
 
-    @FindBy(xpath = "//button[@type='submit']")
+    @FindBy(xpath = "//button[@class='btn btn-info btn-lg']")
     public WebElement packagesBookYourSeatButton;
 
 
