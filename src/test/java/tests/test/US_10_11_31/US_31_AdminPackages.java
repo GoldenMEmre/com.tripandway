@@ -231,8 +231,6 @@ public class US_31_AdminPackages {
         select.selectByIndex(0);
 
         //Destination kisminda bir destination secilir
-        //select = new Select(adminDashboard.addPackageDestinationDropdownMenu);
-        //select.selectByValue("California, USA");
         adminDashboard.editPackageDestinationDropdownMenu.click();
         adminDashboard.editPackageDestinationSearchBox.sendKeys("editPackagesDestinationBuenos");
 
