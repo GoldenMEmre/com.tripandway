@@ -105,5 +105,23 @@ public class US_30 {
         //'Destination is updated successfully!' text'o gorulmesi beklenir
         adminDashboard.editDestinationSuccessfulAlert.isDisplayed();
 
+        // search Box'a kayit ettigimiz Destination adi yazilir
+        adminDashboard.destinationsSearchBox.sendKeys(ConfigReader.getProperty("editDestinationName"));
+
+        // 1 saniye bekler
+        ReusableMethods.wait(1);
+
+        // Kayit ettigimiz Destination'in delete butonuna basilir
+        adminDashboard.destinationsDeleteButton.click();
+
+        // 1 saniye bekler
+        ReusableMethods.wait(1);
+
+        // Alert'a gecis yapilir ve alert accept edilir
+        Driver.getDriver().switchTo().alert().accept();
+
+        // Destination is deleted successfully! yazisinin gorundugu teyit edilir
+        Assert.assertTrue(adminDashboard.destinationDeletedSuccessfulAlert.isDisplayed());
+
     }
 }
