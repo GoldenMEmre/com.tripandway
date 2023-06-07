@@ -1,7 +1,5 @@
 package tests.test.US_18_32_33_34;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.WindowType;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -9,11 +7,11 @@ import pages.UserHomepage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-public class US_18 {
+public class Us_18 {
 
     UserHomepage userHomepage = new UserHomepage();
     @Test
-    public void TC_01() {
+    public void tc24() {
         //Go to https://qa.tripandway.com/
         Driver.getDriver().get(ConfigReader.getProperty("tripUrl"));
 

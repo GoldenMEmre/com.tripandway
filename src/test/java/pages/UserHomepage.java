@@ -220,7 +220,7 @@ public class UserHomepage {
     public WebElement bodyDestinationSixthItemMagnify;
 
     //Body Destination See All Destinations Item
-    @FindBy(xpath = "//*[text()='See All Destinations']")
+    @FindBy(xpath = "(//div[@class='row'])[4]")
     public WebElement bodyDestinationSeeAllDestinations;
 
 
