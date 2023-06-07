@@ -8,8 +8,6 @@ import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.JSUtilities;
 
-import static utilities.Driver.driver;
-
 public class US_04_FooterFeaturedPackages {
 
     @Test
@@ -23,7 +21,7 @@ public class US_04_FooterFeaturedPackages {
         //Features Packages ogesi locate edilir
         WebElement featuredPackagesText = Driver.getDriver().findElement(By.xpath("//*[text()='Featured Packages']"));
         //Scroll yardımıyla Footer'a gidilir
-        JSUtilities.scrollToElement(driver,featuredPackagesText);
+        JSUtilities.scrollToElement(Driver.getDriver(),featuredPackagesText);
         // 5 saniye beklenir
         Thread.sleep(5000);
         //Features Packages'in gorunur oldugu test edilir
