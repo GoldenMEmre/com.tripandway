@@ -49,7 +49,9 @@ public class US_29_Blogs {
         admin.addBlogBlogShortContentBox.sendKeys(ConfigReader.getProperty("addBlogShortContent"));
 
         //Blog Photo kismindan fotograf eklenir.
-
+        String herkesdeFarkli = System.getProperty("user.dir");
+        String dosyaYolu= herkesdeFarkli+ConfigReader.getProperty("dosyaYoluHerkesteAyniOlanKisim");
+        admin.addBlogPhotoButton.sendKeys(dosyaYolu);
 
         //Select Category dropbox'undan uygun secenek secilir.
 
