@@ -654,4 +654,9 @@ public class AdminDashboard {
     @FindBy(xpath = "///*[@class='dropdown-item'][3]")
     public WebElement adminDropDownLogoutButton;
 
+    @FindBy(xpath = "(//a[@class='nav-link'])[5]")
+    public WebElement adminPanelLanguageButton;
+
+
+
 }
