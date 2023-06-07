@@ -15,11 +15,11 @@ public class US_12_Services {
         Driver.getDriver().get("https://qa.tripandway.com/");
         UserHomepage userhomepage = new UserHomepage();
 
-
         //"Hizmetler" butonuna tiklanir.
         userhomepage.menuServices.click();
         JSUtilities.scrollToElement(Driver.getDriver(), userhomepage.bodyOurServicesThirdItem);
         ReusableMethods.wait(3);
+
         //1. Ögenin görüntülenebilir ve aktif durumda oldugu test edilir.
         Assert.assertTrue(userhomepage.bodyOurServicesFirstItem.isDisplayed());
         Assert.assertTrue(userhomepage.bodyOurServicesFirstItem.isEnabled());
