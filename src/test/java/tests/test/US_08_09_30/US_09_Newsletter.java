@@ -9,9 +9,7 @@ import utilities.Driver;
 import utilities.JSUtilities;
 import utilities.ReusableMethods;
 
-import java.io.ObjectInputFilter;
-
-public class US_09 {
+public class US_09_Newsletter {
 
     UserHomepage userHomepage =new UserHomepage();
     Faker faker = new Faker();

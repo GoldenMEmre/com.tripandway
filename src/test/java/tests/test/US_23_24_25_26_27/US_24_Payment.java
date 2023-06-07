@@ -46,9 +46,15 @@ public class US_24_Payment {
         Driver.getDriver().switchTo().frame(userDashboard.packagesPayIframe);
 
         // karnumarasi gir
-        userDashboard.packagesPayCardNumber.sendKeys("4242424242424242");
+        userDashboard.packagesPayCardNumber.sendKeys("4242");
+        userDashboard.packagesPayCardNumber.sendKeys("4242");
+        userDashboard.packagesPayCardNumber.sendKeys("4242");
+        userDashboard.packagesPayCardNumber.sendKeys("4242");
+
         // kartin son kullanma tarihini gir
-        userDashboard.packagesPayCardDate.sendKeys("1234");
+        userDashboard.packagesPayCardDate.sendKeys("12");
+        userDashboard.packagesPayCardDate.sendKeys("12");
+
         // kartin cvc ni gir
         userDashboard.packagesPayCardCVC.sendKeys("567");
         userDashboard.packagesPaySubmitButton.click();
