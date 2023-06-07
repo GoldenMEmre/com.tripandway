@@ -6,7 +6,7 @@ import pages.UserHomepage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-public class US15 {
+public class US_15 {
 
     UserHomepage userHomepage = new UserHomepage();
     // Kullanici olarak hakkimizda sayfasina ulasabilmeli ve
@@ -16,12 +16,10 @@ public class US15 {
         // Kullanici anasayfaya gidebilmeli
         Driver.getDriver().get(ConfigReader.getProperty("tripUrl"));
         userHomepage.cookiesAcceptButton.click();
-
         // anasayfaya eristigini dogrulamali
         String expectedHomePageUrl = ConfigReader.getProperty("tripUrl");
         String actualHomepageUrl = Driver.getDriver().getCurrentUrl();
         Assert.assertEquals(actualHomepageUrl, expectedHomePageUrl);
-
 
         // hakkimizda sayfasina ulasabilmeli ve
         // tum ogelerin gorunur oldugunu dogrulamali
