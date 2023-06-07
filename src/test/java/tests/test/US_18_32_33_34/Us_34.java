@@ -36,7 +36,7 @@ public class Us_34 {
         // ilk siparisteki "Invoice" butonuna tiklanir
         adminDashboard.ordersFirstOrderInvoiceButton.click();
 
-        // Acilan yeni sekmede "Print Invoice" butonunun gorunur oldugu dogrulanir
+        // Acilan yeni sekmede "Print Invoice" butonunun gorunur oldugu dogrulanir.
         String secondWH = "";
         Set<String> WhSet = Driver.getDriver().getWindowHandles();
         for (String eachWh: WhSet
