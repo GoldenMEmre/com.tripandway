@@ -55,6 +55,7 @@ public class US_30 {
 
 
         adminDashboard.addDestinationNameBox.sendKeys(ConfigReader.getProperty("addDestinationName"));
+        ReusableMethods.wait(1);
 
 
         // Datei auswählen kismina page down edilir ve  istenilen fotografin dosya yolu girilerek o fotograf secilir,
@@ -65,6 +66,7 @@ public class US_30 {
         String dosyaYolu = herkesteFarkli + ConfigReader.getProperty("HernePhotoHerkesteAyniOlanKisim");
 
         adminDashboard.addDestinationPhotoButton.sendKeys(dosyaYolu);
+        ReusableMethods.wait(2);
 
         // Submit butonuna tiklanir
         adminDashboard.addDestinationSubmitButton.click();
@@ -90,6 +92,8 @@ public class US_30 {
 
         String herkesteFarkli = System.getProperty("user.dir");
         String dosyaYolu = herkesteFarkli + ConfigReader.getProperty("BochumPhotoHerkesteAyniOlanKisim");
+
+        ReusableMethods.wait(2);
 
         adminDashboard.addDestinationPhotoButton.sendKeys(dosyaYolu);
 
