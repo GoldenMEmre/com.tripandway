@@ -7,6 +7,8 @@ import org.testng.annotations.Test;
 import pages.UserHomepage;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.JSUtilities;
+import utilities.ReusableMethods;
 
 public class US_08 {
     UserHomepage userHomepage = new UserHomepage();
@@ -21,49 +23,16 @@ public class US_08 {
         Driver.getDriver().get(ConfigReader.getProperty("tripUrl"));
 
         //Acilan sayfada cookies kabul edilir
-        //userHomepage.cookiesAcceptButton.click();
-
-        // Page Down yapilarak sayfanin footer kismina ulasilir
-
-        actions = new Actions(Driver.getDriver());
-        actions.sendKeys(Keys.PAGE_DOWN)
-                .sendKeys(Keys.PAGE_DOWN)
-                .sendKeys(Keys.PAGE_DOWN)
-                .sendKeys(Keys.PAGE_DOWN)
-                .sendKeys(Keys.PAGE_DOWN)
-                .sendKeys(Keys.PAGE_DOWN)
-                .sendKeys(Keys.PAGE_DOWN)
-                .sendKeys(Keys.PAGE_DOWN).perform();
-
-        // Footer kisminda 'Adress' bolumunun gorunur oldugu test edilir
-
-        //Assert.assertTrue(userHomepage.addressElement.isDisplayed());
-
-    }
-
-    @Test
-    public void tc02(){
-
-        // Go to https://qa.tripandway.com/
-        Driver.getDriver().get(ConfigReader.getProperty("tripUrl"));
-
-        //Acilan sayfada cookies kabul edilir
         userHomepage.cookiesAcceptButton.click();
 
         // Page Down yapilarak sayfanin footer kismina ulasilir
-
-        actions = new Actions(Driver.getDriver());
-        actions.sendKeys(Keys.PAGE_DOWN)
-                .sendKeys(Keys.PAGE_DOWN)
-                .sendKeys(Keys.PAGE_DOWN)
-                .sendKeys(Keys.PAGE_DOWN)
-                .sendKeys(Keys.PAGE_DOWN)
-                .sendKeys(Keys.PAGE_DOWN)
-                .sendKeys(Keys.PAGE_DOWN)
-                .sendKeys(Keys.PAGE_DOWN).perform();
+        JSUtilities.scrollToElement(Driver.getDriver(),userHomepage.footerAddress);
 
 
+        // 2 saniye bekler
+        ReusableMethods.wait(2);
 
-
+        // Footer kisminda 'Adress' bolumunun gorunur oldugu test edilir
+        Assert.assertTrue(userHomepage.footerAddress.isDisplayed());
     }
 }
