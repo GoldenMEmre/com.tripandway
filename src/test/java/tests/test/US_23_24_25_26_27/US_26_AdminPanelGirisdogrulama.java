@@ -6,7 +6,7 @@ import pages.AdminDashboard;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-public class TC_26 {
+public class US_26_AdminPanelGirisdogrulama {
     @Test
     public void adminLoginTest(){
 

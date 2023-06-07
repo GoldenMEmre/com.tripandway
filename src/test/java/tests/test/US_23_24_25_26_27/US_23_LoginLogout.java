@@ -8,7 +8,7 @@ import pages.UserHomepage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-public class TC_23 {
+public class US_23_LoginLogout {
 
 
 
