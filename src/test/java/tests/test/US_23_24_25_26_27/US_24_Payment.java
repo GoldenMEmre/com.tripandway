@@ -53,13 +53,16 @@ public class US_24_Payment {
 
         // kartin son kullanma tarihini gir
         userDashboard.packagesPayCardDate.sendKeys("12");
-        userDashboard.packagesPayCardDate.sendKeys("12");
+        userDashboard.packagesPayCardDate.sendKeys("34");
 
         // kartin cvc ni gir
         userDashboard.packagesPayCardCVC.sendKeys("567");
         userDashboard.packagesPaySubmitButton.click();
 
+        String expectedUrl="https://qa.tripandway.com/package/store/list";
+        String actualUrl=Driver.getDriver().getCurrentUrl();
 
+       Assert.assertEquals(actualUrl,expectedUrl);
 
 
 
