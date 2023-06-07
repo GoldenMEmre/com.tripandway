@@ -8,7 +8,7 @@ import utilities.Driver;
 import utilities.JSUtilities;
 import utilities.ReusableMethods;
 
-public class US_30 {
+public class US_30_AdminDestination {
 
     AdminDashboard adminDashboard = new AdminDashboard();
     @Test

@@ -1,6 +1,5 @@
 package tests.test.US_08_09_30;
 
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -10,7 +9,7 @@ import utilities.Driver;
 import utilities.JSUtilities;
 import utilities.ReusableMethods;
 
-public class US_08 {
+public class US_08_FooterAdress {
     UserHomepage userHomepage = new UserHomepage();
     Actions actions;
 
