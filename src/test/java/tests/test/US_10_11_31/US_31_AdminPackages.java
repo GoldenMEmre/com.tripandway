@@ -75,8 +75,7 @@ public class US_31_AdminPackages {
 
         //Photo kismina Local'den bir resim eklenir
         String differentPath = System.getProperty("user.dir");
-        String samePath = "/src/test/java/tests/test/US_10_11_31/image.png";
-        String filePath= differentPath+samePath;
+        String filePath= differentPath+ConfigReader.getProperty("ImagePhotoHerkesteAyniOlanKisim");
         adminDashboard.addPackagePhotoButton.sendKeys(filePath);
 
         //Description kismina text yazilir
@@ -180,8 +179,7 @@ public class US_31_AdminPackages {
 
         //Photo kismina Local'den bir resim eklenir
         String differentPath = System.getProperty("user.dir");
-        String samePath = "/src/test/java/tests/test/US_10_11_31/image1.png";
-        String filePath = differentPath + samePath;
+        String filePath = differentPath + ConfigReader.getProperty("Image1PhotoHerkesteAyniOlanKisim");
         adminDashboard.editPackagePhotoButton.sendKeys(filePath);
 
         //Description kismina text yazilir
