@@ -1,30 +1,27 @@
 package tests.test.US_05_06_12_29;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.AdminDashboard;
-import pages.UserHomepage;
 import utilities.ConfigReader;
 import utilities.Driver;
-import utilities.JSUtilities;
+import utilities.ReusableMethods;
 
-public class US_29_Blogs {
+public class US_29 {
 
     @Test
     public void TC_40(){
 
         //Sitenin admin giris kismina erisim saglanir.
-        Driver.getDriver().get("https://qa.tripandway.com/admin/login");
+        Driver.getDriver().get(ConfigReader.getProperty("adminUrl"));
         AdminDashboard admin = new AdminDashboard();
 
         //Acilan sayfada EMail adresi girilir.
-        admin.adminEmailBox.sendKeys("admin02@tripandway.com", Keys.TAB);
+        admin.adminEmailBox.sendKeys(ConfigReader.getProperty("admin02Email"), Keys.TAB);
         // Sifre girilir.
-        admin.adminPasswordBox.sendKeys("123123123");
+        admin.adminPasswordBox.sendKeys(ConfigReader.getProperty("adminPassword"));
         //"Login" butonuna tiklanir.
         admin.adminLoginButton.click();
     }
@@ -68,33 +65,42 @@ public class US_29_Blogs {
         admin.addBlogSubmitButton.click();
 
         //"Blog is added successfully!" mesajinin görüntülendigi dogrulanir.
+        ReusableMethods.wait(3);
         Assert.assertTrue(admin.addBlogSuccessfulAlert.isDisplayed());
     }
 
     @Test(dependsOnMethods = "TC_41")
     public void TC_42(){
         AdminDashboard admin = new AdminDashboard();
-        WebElement previous1 = Driver.getDriver().findElement(By.xpath("//*[@id='dataTable_previous']"));
 
-        //Sayfanin en alt kismina inilir.
-        JSUtilities.scrollToElement(Driver.getDriver(),previous1);
+        //Blog ismi searchBox'da aratilir.
+        admin.blogsSearchBox.clear();
+        admin.blogsSearchBox.sendKeys(ConfigReader.getProperty("addBlogTitle"),Keys.ENTER);
+        ReusableMethods.wait(2);
 
         //Blog düzenleme butonuna tiklanir.
         admin.blogsActionEditButton.click();
 
         //Blog Title kisminda degisiklikler yapilir.
+        admin.editBlogBlogTitleBox.clear();
         admin.editBlogBlogTitleBox.sendKeys(ConfigReader.getProperty("editBlogTitle"));
+        ReusableMethods.wait(2);
 
         //Blog Content kisminda degisiklikler yapilir.
+        admin.editBlogBlogContentBox.clear();
         admin.editBlogBlogContentBox.sendKeys(ConfigReader.getProperty("editBlogContent"));
+        ReusableMethods.wait(2);
 
         //Blog Short Content kisminda degisiklikler yapilir.
+        admin.editBlogBlogShortContentBox.clear();
         admin.editBlogBlogShortContentBox.sendKeys(ConfigReader.getProperty("editBlogShortContent"));
+        ReusableMethods.wait(5);
 
         //Yeni bir resim eklenir.
         String herkesteFarkli = System.getProperty("user.dir");
         String dosyaYolu = herkesteFarkli+ConfigReader.getProperty("HernePhotoHerkesteAyniOlanKisim");
         admin.editBlogPhotoButton.sendKeys(dosyaYolu);
+        ReusableMethods.wait(5);
 
         //Select Category kismindan yeni bir secenek secilir.
         Select select = new Select(admin.editBlogSelectCategoryDropdownMenu);
@@ -109,9 +115,11 @@ public class US_29_Blogs {
 
         //"Blog is updated successfully!" yazisinin görünürlügü dogrulanir.
         Assert.assertTrue(admin.addBlogSuccessfulAlert.isDisplayed());
+        ReusableMethods.wait(5);
 
-        //Sayfanin en alt kismina gelinir.
-        JSUtilities.scrollToElement(Driver.getDriver(),previous1);
+        //Blog ismi SearchBox'da aratilir.
+        admin.blogsSearchBox.clear();
+        admin.blogsSearchBox.sendKeys(ConfigReader.getProperty("editBlogTitle"),Keys.ENTER);
 
         //Silme butonuna tiklanir.
         admin.blogsActionDeleteButton.click();
@@ -120,7 +128,8 @@ public class US_29_Blogs {
         Driver.getDriver().switchTo().alert().accept();
 
         //Ekranda "Blog is deleted successfully!" yazisinin göründügü dogrulanir.
+        ReusableMethods.wait(2);
         Assert.assertTrue(admin.editBlogSuccessfulAlert.isDisplayed());
-
+        Driver.closeDriver();
     }
 }
