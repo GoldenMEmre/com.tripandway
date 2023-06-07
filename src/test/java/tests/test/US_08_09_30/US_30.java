@@ -63,7 +63,7 @@ public class US_30 {
         String herkesteFarkli = System.getProperty("user.dir");
 
 
-        String dosyaYolu = herkesteFarkli + ConfigReader.getProperty("dosyaYoluHerkesteAyniOlanKisim");
+        String dosyaYolu = herkesteFarkli + ConfigReader.getProperty("HernePhotoHerkesteAyniOlanKisim");
 
         System.out.println(dosyaYolu);
 
