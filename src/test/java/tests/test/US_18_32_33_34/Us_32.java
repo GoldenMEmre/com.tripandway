@@ -6,11 +6,11 @@ import pages.AdminDashboard;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-public class US_32 {
+public class Us_32 {
     AdminDashboard adminDashboard = new AdminDashboard();
 
     @Test
-    public void TC01(){
+    public void tc51(){
         // Go to https://qa.tripandway.com/admin/login
         Driver.getDriver().get(ConfigReader.getProperty("adminUrl"));
 

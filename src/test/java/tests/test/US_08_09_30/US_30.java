@@ -34,6 +34,8 @@ public class US_30 {
 
     @Test (dependsOnMethods = "TC43")
     public void TC44(){
+
+        ReusableMethods.wait(2);
         // ADMIN PANEL bolumunde Destinations'a tiklanir
         adminDashboard.adminPanelDestinationsButton.click();
 
@@ -49,26 +51,59 @@ public class US_30 {
 
     @Test(dependsOnMethods = "TC44")
     public void TC45(){
-        // 1-Add Destination sayfasinda gerekli bilgiler doldudulur,
-        // Datei auswählen butonuna tiklanir ve istenilen fotografin dosya yolu girilerek o fotograf secilir,
-        // Submit butonuna tiklanir ve
-        //'Destination is added successfully!' text'inin gorulmesi beklenir
-        adminDashboard.addDestinationNameBox.sendKeys(ConfigReader.getProperty("addDestinationName"));
+        // Add Destination sayfasinda gerekli bilgiler doldudulur,
 
-        JSUtilities.scrollToElement(Driver.getDriver(),adminDashboard.addDestinationDetailSubheadingBox);
+
+        adminDashboard.addDestinationNameBox.sendKeys(ConfigReader.getProperty("addDestinationName"));
+        ReusableMethods.wait(1);
+
+
+        // Datei auswählen kismina page down edilir ve  istenilen fotografin dosya yolu girilerek o fotograf secilir,
+        JSUtilities.scrollToElement(Driver.getDriver(),adminDashboard.addDestinationPhotoButton);
+        ReusableMethods.wait(2);
+
+        String herkesteFarkli = System.getProperty("user.dir");
+        String dosyaYolu = herkesteFarkli + ConfigReader.getProperty("HernePhotoHerkesteAyniOlanKisim");
+
+        adminDashboard.addDestinationPhotoButton.sendKeys(dosyaYolu);
+        ReusableMethods.wait(2);
+
+        // Submit butonuna tiklanir
+        adminDashboard.addDestinationSubmitButton.click();
+
+        // 'Destination is added successfully!' text'inin gorulmesi beklenir
+        Assert.assertTrue(adminDashboard.addDestinationSuccessfulAlert.isDisplayed());
+    }
+
+    @Test (dependsOnMethods = "TC45")
+    public void TC46(){
+        //View Destinations sayfasinda search Box'a kayit ettigimiz Destination adi yazilir
+        adminDashboard.destinationsSearchBox.sendKeys(ConfigReader.getProperty("addDestinationName"));
+
+        // Edit tusuna basilir ve yapilacak degisiklikler varsa yapilir
+         adminDashboard.destinationsActionEditButton.click();
+
+         adminDashboard.editDestinationNameBox.clear();
+
+         adminDashboard.editDestinationNameBox.sendKeys(ConfigReader.getProperty("editDestinationName"));
+
+        JSUtilities.scrollToElement(Driver.getDriver(),adminDashboard.editDestinationPhotoButton);
+        ReusableMethods.wait(2);
+
+        String herkesteFarkli = System.getProperty("user.dir");
+        String dosyaYolu = herkesteFarkli + ConfigReader.getProperty("BochumPhotoHerkesteAyniOlanKisim");
 
         ReusableMethods.wait(2);
 
-
-        String herkesteFarkli = System.getProperty("user.dir");
-
-
-        String dosyaYolu = herkesteFarkli + ConfigReader.getProperty("HernePhotoHerkesteAyniOlanKisim");
-
-        System.out.println(dosyaYolu);
-
-
         adminDashboard.addDestinationPhotoButton.sendKeys(dosyaYolu);
+
+        // update tusuna basilir
+        adminDashboard.editDestinationUpdateButton.click();
+
+        ReusableMethods.wait(2);
+
+        //'Destination is updated successfully!' text'o gorulmesi beklenir
+        adminDashboard.editDestinationSuccessfulAlert.isDisplayed();
 
     }
 }

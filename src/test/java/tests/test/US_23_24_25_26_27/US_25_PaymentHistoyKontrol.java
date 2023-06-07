@@ -7,7 +7,7 @@ import pages.UserHomepage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-public class TC_25 {
+public class US_25_PaymentHistoyKontrol {
 
     @Test
     public void paymentHistory(){
