@@ -60,8 +60,8 @@ public class US_18 {
         String expectedTitle = "Traveller Panel";
         Assert.assertEquals(expectedTitle,Driver.getDriver().getTitle());
 
-        // Close to Browser
-        Driver.closeDriver();
+        // Quit to Browser
+        Driver.quitDriver();
 
 
 
