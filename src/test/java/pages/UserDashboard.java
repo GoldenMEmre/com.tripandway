@@ -141,6 +141,10 @@ public class UserDashboard {
     public WebElement packagesPaySuccessf;
 
 
+    @FindBy (xpath ="//iframe[@class='stripe_checkout_app']")
+    public WebElement packagesPayIframe;
+
+
 
 
 
