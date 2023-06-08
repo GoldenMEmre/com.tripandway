@@ -39,6 +39,7 @@ public class US_09_Newsletter {
     @Test(dependsOnMethods = "TC10")
     public void TC11(){
 
+
         //Email kutusunun icine gecerli bir email adresi yazilir
         userHomepage.bodyNewsletterEmailBox.sendKeys(faker.internet().emailAddress());
 
