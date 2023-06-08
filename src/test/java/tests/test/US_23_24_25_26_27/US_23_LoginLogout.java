@@ -8,7 +8,7 @@ import pages.UserHomepage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-public class TC_23 {
+public class US_23_LoginLogout {
 
 
 
@@ -38,10 +38,10 @@ public class TC_23 {
 
         String expectedUrl="https://qa.tripandway.com/traveller/login";
         String actualUrl = Driver.getDriver().getCurrentUrl();
+
         Assert.assertEquals(actualUrl,expectedUrl);
 
         Driver.closeDriver();
-
 
     }
 }
