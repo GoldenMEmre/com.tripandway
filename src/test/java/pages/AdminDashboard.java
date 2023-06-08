@@ -616,7 +616,7 @@ public class AdminDashboard {
 
     //Admin sayfasi Email ekrani onay yazisinin goruntulenmesi
     @FindBy(xpath = "//*[@id='page-top']/script[4]")
-    public WebElement adminSubscriberseMailExpectedText;
+    public WebElement adminSubscriberseMailToastMessage;
 
     //Admin sayfasi sag üst admin profil dropdown menu butonu
     @FindBy(xpath = "//a[@id='userDropdown']")
