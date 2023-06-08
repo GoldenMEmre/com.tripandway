@@ -50,6 +50,7 @@ public class US_30_AdminDestination {
         Assert.assertTrue(adminDashboard.addDestinationNameBox.isEnabled());
     }
 
+
     @Test(dependsOnMethods = "TC44")
     public void TC45() {
         // Add Destination sayfasinda gerekli bilgiler doldudulur,
