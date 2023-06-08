@@ -46,6 +46,8 @@ public class US_27_AdminDashboardMenu {
         // EmailTemplate  butonunu tikla
         Assert.assertTrue(adminDashboard.adminPanelEmailTemplateButton.isEnabled());
 
+        Driver.closeDriver();
+
 
 
 

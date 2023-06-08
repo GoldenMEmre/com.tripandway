@@ -7,13 +7,13 @@ import pages.UserDashboard;
 import pages.UserHomepage;
 import utilities.ConfigReader;
 import utilities.Driver;
-import utilities.ReusableMethods;
+
 
 public class US_24_Payment {
 
 
     @Test
-    public void paymentTest() throws InterruptedException {
+    public void paymentTest() {
 
         //  anasayfaya gidelim
 
@@ -64,7 +64,7 @@ public class US_24_Payment {
 
         Assert.assertEquals(actualUrl,expectedUrl);
 
-
+        Driver.closeDriver();
 
 
 
