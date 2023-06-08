@@ -6,15 +6,17 @@ import pages.AdminDashboard;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-public class US_35_Admin_Subscribers {
+public class US_41_AdminLogoaut {
 
     @Test
-    public void TC_54(){
+    public void TC_61() {
+
         // "https://qa.tripandway.com/admin/login" adresine gider.
         // Goes to "https://qa.tripandway.com/admin/login" address.
         Driver.getDriver().get(ConfigReader.getProperty("adminUrl"));
 
-        AdminDashboard adminDashboard= new AdminDashboard();
+        AdminDashboard adminDashboard = new AdminDashboard();
+
 
         // Email adresini,  Email adres kutusuna yazar.
         // Writes the email address in the mail address box.
@@ -28,26 +30,21 @@ public class US_35_Admin_Subscribers {
         // Clicks the Login button.
         adminDashboard.adminLoginButton.click();
 
-        // Admin Panel'de bulunan "Subscribers" butonu tiklanir
-        // Click the "Subscribers" button in the Admin Panel
+        // Sayfanin sag ust kismindaki "Admin" butonuna tiklanir.
+        //click on the "Admin" button at the top right of the page.
+        adminDashboard.adminDropdownMenu.click();
 
-        adminDashboard.adminPanelSubscriberButton.click();
+        //"Logout" sekmesi secilir ve sayfdan cikis yapilir.
+        // Select the "Logout" tab and exit the page.
+        adminDashboard.adminDropDownLogoutButton.click();
 
-      
+        // Site ana sayfasina dönus yapilip yapilmadigi dogrulanmali.
+        // It should be verified whether the site is returned to the home page.
 
+        String expectedTitle="homePageTitle";
+        String actualTitle= Driver.getDriver().getTitle();
 
-        // Acilan sekmeden "All Subscribers" secilip tiklanir.
-        // Select "All Subscribers" from the tab that opens and click.
-        adminDashboard.dropDownAllsubscribers.click();
-
-        // Acilan sayfada üyelerin gorundugunu dogrulanir.
-        // Verify that members are seen on the page that opens.
-        String expectedContent ="Showing";
-        String actualContent = adminDashboard.adminSubscribersshowingSearchWord.getText();
-        Assert.assertTrue(actualContent.contains(expectedContent));
-
-        Driver.getDriver().close();
-
-    }
-}
+        //Ana sayfaya donmuyor, Bag var
+        Assert.assertEquals(actualTitle,expectedTitle);
+    }}
 
