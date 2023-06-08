@@ -10,14 +10,16 @@ public class UserDashboard {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
-
+    //Login Dashboard sayfasina basarili giris elementi
     @FindBy(xpath = "//*[text()='Completed Orders']")
     public WebElement successfullLogin;
+
+
     @FindBy(xpath = "(//*[text()='Completed'])[1]")
     public WebElement paymentHistoryCompleted;
 
 
-
+    //Login Dashboard sayfasindaki Update Profile elementi
     @FindBy(xpath = "//a[text()='Update Profile']")
     public WebElement updateProfileButton;
 
