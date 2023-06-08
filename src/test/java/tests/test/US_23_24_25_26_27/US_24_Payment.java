@@ -64,7 +64,7 @@ public class US_24_Payment {
 
         Assert.assertEquals(actualUrl,expectedUrl);
 
-
+        Driver.closeDriver();
 
 
 
