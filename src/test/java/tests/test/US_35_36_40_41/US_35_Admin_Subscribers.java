@@ -30,7 +30,7 @@ public class US_35_Admin_Subscribers {
 
         // Admin Panel'de bulunan "Subscribers" butonu tiklanir
         // Click the "Subscribers" button in the Admin Panel
-        adminDashboard.adminPanelSubscribersButton.click();
+        adminDashboard.adminPanelSubscriberButton.click();
 
         // Acilan sekmeden "All Subscribers" secilip tiklanir.
         // Select "All Subscribers" from the tab that opens and click.
@@ -39,7 +39,7 @@ public class US_35_Admin_Subscribers {
         // Acilan sayfada üyelerin gorundugunu dogrulanir.
         // Verify that members are seen on the page that opens.
         String expectedContent ="Showing";
-        String actualContent = adminDashboard.showingSearchWord.getText();
+        String actualContent = adminDashboard.adminSubscribersshowingSearchWord.getText();
         Assert.assertTrue(actualContent.contains(expectedContent));
 
         Driver.getDriver().close();
