@@ -12,7 +12,7 @@ import utilities.ReusableMethods;
 public class US_06 {
 
     @Test
-    public void TC_06() throws InterruptedException {
+    public void TC06() throws InterruptedException {
         //Siteye erisim saglanir.
         Driver.getDriver().get(ConfigReader.getProperty("tripUrl"));
         UserHomepage userhomepage = new UserHomepage();
