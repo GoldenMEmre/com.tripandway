@@ -12,7 +12,7 @@ import utilities.ReusableMethods;
 public class US_29 {
 
     @Test
-    public void TC_40(){
+    public void TC40(){
 
         //Sitenin admin giris kismina erisim saglanir.
         Driver.getDriver().get(ConfigReader.getProperty("adminUrl"));
@@ -26,8 +26,8 @@ public class US_29 {
         admin.adminLoginButton.click();
     }
 
-    @Test(dependsOnMethods = "TC_40")
-    public void TC_41(){
+    @Test(dependsOnMethods = "TC40")
+    public void TC41(){
         AdminDashboard admin = new AdminDashboard();
 
         //Blog Section kismina tiklanir.
@@ -69,8 +69,8 @@ public class US_29 {
         Assert.assertTrue(admin.addBlogSuccessfulAlert.isDisplayed());
     }
 
-    @Test(dependsOnMethods = "TC_41")
-    public void TC_42(){
+    @Test(dependsOnMethods = "TC41")
+    public void TC42(){
         AdminDashboard admin = new AdminDashboard();
 
         //Blog ismi searchBox'da aratilir.
@@ -117,9 +117,14 @@ public class US_29 {
         Assert.assertTrue(admin.addBlogSuccessfulAlert.isDisplayed());
         ReusableMethods.wait(5);
 
+        //Sayfa yenilenir.
+        Driver.getDriver().navigate().refresh();
+        ReusableMethods.wait(10);
+
         //Blog ismi SearchBox'da aratilir.
         admin.blogsSearchBox.clear();
         admin.blogsSearchBox.sendKeys(ConfigReader.getProperty("editBlogTitle"),Keys.ENTER);
+        ReusableMethods.wait(5 );
 
         //Silme butonuna tiklanir.
         admin.blogsActionDeleteButton.click();
