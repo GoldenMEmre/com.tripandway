@@ -14,6 +14,7 @@ public class US_29 {
     @Test
     public void TC40(){
 
+
         //Sitenin admin giris kismina erisim saglanir.
         Driver.getDriver().get(ConfigReader.getProperty("adminUrl"));
         AdminDashboard admin = new AdminDashboard();
