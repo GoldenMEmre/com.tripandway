@@ -30,7 +30,11 @@ public class US_35_Admin_Subscribers {
 
         // Admin Panel'de bulunan "Subscribers" butonu tiklanir
         // Click the "Subscribers" button in the Admin Panel
+
         adminDashboard.adminPanelSubscriberButton.click();
+
+      
+
 
         // Acilan sekmeden "All Subscribers" secilip tiklanir.
         // Select "All Subscribers" from the tab that opens and click.

@@ -16,7 +16,7 @@ public class US_08_FooterAdress {
 
 
     @Test
-    public void TC01(){
+    public void TC08(){
 
         // Go to https://qa.tripandway.com/
         Driver.getDriver().get(ConfigReader.getProperty("tripUrl"));
@@ -33,5 +33,12 @@ public class US_08_FooterAdress {
 
         // Footer kisminda 'Adress' bolumunun gorunur oldugu test edilir
         Assert.assertTrue(userHomepage.footerAddress.isDisplayed());
+    }
+
+    @Test (dependsOnMethods = "TC08")
+    public void TC09(){
+
+        // Adress bolumunde bulunan iletisim linkleri gorunur oldugu test edilir
+        Assert.assertTrue(userHomepage.footerAddressSocial.isDisplayed());
     }
 }
