@@ -38,10 +38,10 @@ public class US_23_LoginLogout {
 
         String expectedUrl="https://qa.tripandway.com/traveller/login";
         String actualUrl = Driver.getDriver().getCurrentUrl();
+
         Assert.assertEquals(actualUrl,expectedUrl);
 
         Driver.closeDriver();
-
 
     }
 }

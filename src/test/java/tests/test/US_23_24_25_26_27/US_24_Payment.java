@@ -7,13 +7,13 @@ import pages.UserDashboard;
 import pages.UserHomepage;
 import utilities.ConfigReader;
 import utilities.Driver;
-import utilities.ReusableMethods;
+
 
 public class US_24_Payment {
 
 
     @Test
-    public void paymentTest() throws InterruptedException {
+    public void paymentTest() {
 
         //  anasayfaya gidelim
 
@@ -34,7 +34,7 @@ public class US_24_Payment {
         // Menude bulunan Packages tikla
         userHomepage.menuPackages.click();
         // Istanbul resimli olan turu tikla
-        userHomepage.packagesPhotoTitleIstanbul.click();
+        userHomepage.packagesIstanbul.click();
 
         UserDashboard userDashboard=new UserDashboard();
         // Book your seat butonunu tikla
@@ -62,9 +62,9 @@ public class US_24_Payment {
         String expectedUrl="https://qa.tripandway.com/package/store/list";
         String actualUrl=Driver.getDriver().getCurrentUrl();
 
-       Assert.assertEquals(actualUrl,expectedUrl);
+        Assert.assertEquals(actualUrl,expectedUrl);
 
-
+        Driver.closeDriver();
 
 
 

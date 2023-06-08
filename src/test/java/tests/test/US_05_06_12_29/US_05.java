@@ -3,17 +3,18 @@ package tests.test.US_05_06_12_29;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.UserHomepage;
+import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.JSUtilities;
 import utilities.ReusableMethods;
 
 
-public class US_05_FooterLatestPackages {
+public class US_05 {
 
     @Test
-    public void TC_05(){
+    public void TC05(){
         //Siteye erisim saglanir.
-        Driver.getDriver().get("https://qa.tripandway.com/");
+        Driver.getDriver().get(ConfigReader.getProperty("tripUrl"));
         UserHomepage userhomepage = new UserHomepage();
 
         //Sitenin footer bölümüne gidilir.
