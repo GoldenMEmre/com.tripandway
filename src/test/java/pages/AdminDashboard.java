@@ -596,27 +596,27 @@ public class AdminDashboard {
 
     // Admin sayfasinda Subscriber üyelerinin göründügüne iliskin kelime (showing)
     @FindBy(xpath = "//*[@id='dataTable_info']")
-    public WebElement showingSearchWord;
+    public WebElement adminSubscribersshowingSearchWord;
 
     //Admin sayfasi dropdown Subscribers /Send Email to Subscriber secimi
     @FindBy(xpath = "//*[@id='collapseSubscriber']/div/a[2]")
-    public WebElement dropDownSendEmail;
+    public WebElement adminDropDownSendEmail;
 
     //Admin sayfasi Email ekrani Subject Box
     @FindBy(xpath = "//*[@class='form-control']")
-    public WebElement subjectBox;
+    public WebElement adminSubscribersEmailSubjectBox;
 
     //Admin sayfasi Email ekrani Massege Box
     @FindBy(xpath = " //*[@role='textbox']")
-    public WebElement massegeBox;
+    public WebElement adminSabscribersMassegeBox;
 
     //Admin sayfasi Email ekrani Submit Butonu
     @FindBy(xpath = "//button[@type='submit']")
-    public WebElement submitSendMailButton;
+    public WebElement adminSubscribersEmailSubmitButton;
 
     //Admin sayfasi Email ekrani onay yazisinin goruntulenmesi
     @FindBy(xpath = "//*[@id='page-top']/script[4]")
-    public WebElement eMailExpectedText;
+    public WebElement adminSubscriberseMailExpectedText;
 
     //Admin sayfasi sag üst admin profil dropdown menu butonu
     @FindBy(xpath = "//a[@id='userDropdown']")
@@ -651,7 +651,7 @@ public class AdminDashboard {
     public WebElement adminVisitWebsiteButton;
 
     //Admin sayfasindaki Admin dropdown/ Logout sekmesinin secimi
-    @FindBy(xpath = "///*[@class='dropdown-item'][3]")
+    @FindBy(xpath = "//*[@class='dropdown-item'][3]")
     public WebElement adminDropDownLogoutButton;
 
     @FindBy(xpath = "(//a[@class='nav-link'])[5]")

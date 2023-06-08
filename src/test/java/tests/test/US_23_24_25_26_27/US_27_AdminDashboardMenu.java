@@ -6,7 +6,7 @@ import pages.AdminDashboard;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-public class US_27_AdminPageleriTiklama {
+public class US_27_AdminDashboardMenu {
 
     @Test
     public void adminGirisSonrasiButonTiklama() throws InterruptedException {
@@ -45,6 +45,8 @@ public class US_27_AdminPageleriTiklama {
 
         // EmailTemplate  butonunu tikla
         Assert.assertTrue(adminDashboard.adminPanelEmailTemplateButton.isEnabled());
+
+        Driver.closeDriver();
 
 
 

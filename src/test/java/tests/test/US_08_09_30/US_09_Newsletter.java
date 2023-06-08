@@ -9,9 +9,7 @@ import utilities.Driver;
 import utilities.JSUtilities;
 import utilities.ReusableMethods;
 
-import java.io.ObjectInputFilter;
-
-public class US_09 {
+public class US_09_Newsletter {
 
     UserHomepage userHomepage =new UserHomepage();
     Faker faker = new Faker();
@@ -40,6 +38,7 @@ public class US_09 {
 
     @Test(dependsOnMethods = "TC10")
     public void TC11(){
+
 
         //Email kutusunun icine gecerli bir email adresi yazilir
         userHomepage.bodyNewsletterEmailBox.sendKeys(faker.internet().emailAddress());

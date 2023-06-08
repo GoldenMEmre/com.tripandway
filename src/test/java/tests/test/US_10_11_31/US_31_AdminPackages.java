@@ -7,14 +7,14 @@ import pages.AdminDashboard;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-public class US_31_Admin_Packages {
+public class US_31_AdminPackages {
     /*
         Admin girişi yaptıktan sonra Packages kısmına yeni package ekleyip
         eklediğim package'in düzenlenebildiğini ve silinebildiğini sırayla doğrulayabilmeliyim
      */
 
     @Test
-    public void TC_47() {
+    public void TC47() {
         //browser ile 'https://qa.tripandway.com/admin/login' sayfasina gidilir
         Driver.getDriver().get(ConfigReader.getProperty("adminUrl"));
 
@@ -44,7 +44,7 @@ public class US_31_Admin_Packages {
     }
 
     @Test
-    public void TC_48() {
+    public void TC48() {
         //browser ile 'https://qa.tripandway.com/admin/login' sayfasina gidilir
         Driver.getDriver().get(ConfigReader.getProperty("adminUrl"));
 
@@ -75,8 +75,7 @@ public class US_31_Admin_Packages {
 
         //Photo kismina Local'den bir resim eklenir
         String differentPath = System.getProperty("user.dir");
-        String samePath = "/src/test/java/tests/US_10_11_31/image.png";
-        String filePath= differentPath+samePath;
+        String filePath= differentPath+ConfigReader.getProperty("ImagePhotoHerkesteAyniOlanKisim");
         adminDashboard.addPackagePhotoButton.sendKeys(filePath);
 
         //Description kismina text yazilir
@@ -140,7 +139,7 @@ public class US_31_Admin_Packages {
     }
 
     @Test
-    public void TC_49() {
+    public void TC49() {
         //browser ile 'https://qa.tripandway.com/admin/login' sayfasina gidilir
         Driver.getDriver().get(ConfigReader.getProperty("adminUrl"));
 
@@ -180,8 +179,7 @@ public class US_31_Admin_Packages {
 
         //Photo kismina Local'den bir resim eklenir
         String differentPath = System.getProperty("user.dir");
-        String samePath = "/src/test/java/tests/US_10_11_31/image1.png";
-        String filePath = differentPath + samePath;
+        String filePath = differentPath + ConfigReader.getProperty("Image1PhotoHerkesteAyniOlanKisim");
         adminDashboard.editPackagePhotoButton.sendKeys(filePath);
 
         //Description kismina text yazilir
@@ -233,8 +231,6 @@ public class US_31_Admin_Packages {
         select.selectByIndex(0);
 
         //Destination kisminda bir destination secilir
-        //select = new Select(adminDashboard.addPackageDestinationDropdownMenu);
-        //select.selectByValue("California, USA");
         adminDashboard.editPackageDestinationDropdownMenu.click();
         adminDashboard.editPackageDestinationSearchBox.sendKeys("editPackagesDestinationBuenos");
 
@@ -260,7 +256,7 @@ public class US_31_Admin_Packages {
     }
 
     @Test
-    public void TC_50() {
+    public void TC50() {
         //browser ile 'https://qa.tripandway.com/admin/login' sayfasina gidilir
         Driver.getDriver().get(ConfigReader.getProperty("adminUrl"));
 

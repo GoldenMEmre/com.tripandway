@@ -220,7 +220,7 @@ public class UserHomepage {
     public WebElement bodyDestinationSixthItemMagnify;
 
     //Body Destination See All Destinations Item
-    @FindBy(xpath = "//*[text()='See All Destinations']")
+    @FindBy(xpath = "(//div[@class='row'])[4]")
     public WebElement bodyDestinationSeeAllDestinations;
 
 
@@ -565,26 +565,26 @@ public class UserHomepage {
 
 
     @FindBy(xpath = "(//div[@class='photo-title'])[1]")
-    public WebElement packagesPhotoTitle1;
+    public WebElement packages3DaysBuenosAires;
 
 
     @FindBy(xpath = "(//div[@class='photo-title'])[2]")
-    public WebElement packagesPhotoTitle2;
+    public WebElement packages10DaysBuenosAires;
 
 
     @FindBy(xpath = "(//div[@class='photo-title'])[3]")
-    public WebElement packagesPhotoTitleIstanbul;
+    public WebElement packagesIstanbul;
 
 
     @FindBy(xpath = "(//div[@class='photo-title'])[4]")
-    public WebElement packagesPhotoTitle4;
+    public WebElement packages3DaysBangkok;
 
     @FindBy(xpath = "(//div[@class='photo-title'])[5]")
-    public WebElement packagesPhotoTitle5;
+    public WebElement packages7DaysSalinaIsland;
 
 
     @FindBy(xpath = "(//div[@class='photo-title'])[6]")
-    public WebElement packagesPhotoTitle6;
+    public WebElement packages5DaysCalifornia;
 
 
     @FindBy(xpath = "(//div[@class='photo-title'])[7]")
@@ -600,11 +600,11 @@ public class UserHomepage {
 
 
     @FindBy(xpath = "//*[text()='OUR MISSION']")
-    public WebElement aboutusTextTitle;
+    public WebElement aboutUsOurMissionText;
 
 
     @FindBy(xpath = "//*[text()='OUR VISION']")
-    public WebElement aboutusTextTitle1;
+    public WebElement aboutUsOurVisionText;
 
 
     @FindBy(tagName = "h1")
@@ -698,5 +698,11 @@ public class UserHomepage {
 
     @FindBy(xpath = "//div[@class='toast-message']")
     public WebElement regAlreadyExistsMassage;
+
+    @FindBy(xpath = "//input[@name='visitor_name']")
+    public WebElement menuContactNameBox;
+
+    @FindBy(xpath = "//div[@aria-live = 'polite']")
+    public WebElement contactMessageGonderildiOkeyi;
 }
 
