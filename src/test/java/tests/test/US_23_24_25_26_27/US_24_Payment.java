@@ -34,7 +34,7 @@ public class US_24_Payment {
         // Menude bulunan Packages tikla
         userHomepage.menuPackages.click();
         // Istanbul resimli olan turu tikla
-        userHomepage.packagesPhotoTitleIstanbul.click();
+        userHomepage.packagesIstanbul.click();
 
         UserDashboard userDashboard=new UserDashboard();
         // Book your seat butonunu tikla
@@ -62,7 +62,7 @@ public class US_24_Payment {
         String expectedUrl="https://qa.tripandway.com/package/store/list";
         String actualUrl=Driver.getDriver().getCurrentUrl();
 
-       Assert.assertEquals(actualUrl,expectedUrl);
+        Assert.assertEquals(actualUrl,expectedUrl);
 
 
 
