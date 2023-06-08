@@ -9,7 +9,7 @@ import utilities.Driver;
 import utilities.JSUtilities;
 import utilities.ReusableMethods;
 
-public class US_19 {
+public class US_19_LoginDashboard {
     @Test
     public void TC25() {
 
