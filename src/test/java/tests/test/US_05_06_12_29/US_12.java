@@ -11,7 +11,7 @@ import utilities.ReusableMethods;
 public class US_12 {
 
     @Test
-    public void TC_14(){
+    public void TC14(){
         //Siteye erisim saglanir.
         Driver.getDriver().get(ConfigReader.getProperty("tripUrl"));
         UserHomepage userhomepage = new UserHomepage();
