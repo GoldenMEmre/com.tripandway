@@ -41,7 +41,7 @@ public class US_40_Arrow_WebsiteButton {
         // Check that the arrow can be clicked.
         Assert.assertTrue(adminDashboard.adminPanelArrowButton.isEnabled());
 
-        Driver.quitDriver();
+        Driver.closeDriver();
 
     }
 
@@ -90,7 +90,7 @@ public class US_40_Arrow_WebsiteButton {
 
         Assert.assertTrue(actualTitle.contains(expectedTitle));
 
-        Driver.closeDriver();
+        Driver.quitDriver();
 
     }
 }
