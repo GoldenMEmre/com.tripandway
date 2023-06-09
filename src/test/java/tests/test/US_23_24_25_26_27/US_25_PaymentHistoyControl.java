@@ -6,8 +6,9 @@ import pages.UserDashboard;
 import pages.UserHomepage;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.TestBaseRapor;
 
-public class US_25_PaymentHistoyControl {
+public class US_25_PaymentHistoyControl extends TestBaseRapor {
 
     @Test
     public void paymentHistory(){
