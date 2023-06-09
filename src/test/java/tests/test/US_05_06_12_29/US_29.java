@@ -125,7 +125,7 @@ public class US_29 {
 
         //Sayfa yenilenir.
         Driver.getDriver().navigate().refresh();
-        ReusableMethods.wait(10);
+        ReusableMethods.wait(5);
 
         //Blog ismi SearchBox'da aratilir.
         admin.blogsSearchBox.clear();

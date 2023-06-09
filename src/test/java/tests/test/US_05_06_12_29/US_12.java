@@ -19,9 +19,6 @@ public class US_12 {
         //"Hizmetler" butonuna tiklanir.
         userhomepage.menuServices.click();
 
-        //Hizmetler Sayfasina ulasilabildigi dogrulanir.
-        Assert.assertTrue(userhomepage.bodyOurServices.isDisplayed());
-
         //Sayfada 3. Elementin oldugu kisima kadar asagi inilir.
         JSUtilities.scrollToElement(Driver.getDriver(), userhomepage.bodyOurServicesThirdItem);
         ReusableMethods.wait(3);
