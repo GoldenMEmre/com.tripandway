@@ -5,8 +5,9 @@ import org.testng.annotations.Test;
 import pages.AdminDashboard;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.TestBaseRapor;
 
-public class US_35_Admin_Subscribers {
+public class US_35_Admin_Subscribers extends TestBaseRapor {
 
     @Test
     public void TC_54(){
