@@ -5,8 +5,9 @@ import org.testng.annotations.Test;
 import pages.AdminDashboard;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.TestBaseRapor;
 
-public class US_26_AdminLogin {
+public class US_26_AdminLogin extends TestBaseRapor {
     @Test
     public void adminLoginTest(){
 
