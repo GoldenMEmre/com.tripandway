@@ -7,8 +7,9 @@ import pages.UserDashboard;
 import pages.UserHomepage;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.TestBaseRapor;
 
-public class US_23_LoginLogout {
+public class US_23_LoginLogout extends TestBaseRapor  {
 
 
 
