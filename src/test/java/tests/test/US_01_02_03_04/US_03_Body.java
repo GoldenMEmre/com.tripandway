@@ -7,12 +7,9 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.UserHomepage;
-import utilities.ConfigReader;
-import utilities.Driver;
-import utilities.JSUtilities;
-import utilities.ReusableMethods;
+import utilities.*;
 
-public class US_03_Body {
+public class US_03_Body extends TestBaseRapor {
 
     @Test
     public void TC03() {
@@ -44,7 +41,7 @@ public class US_03_Body {
         String readMoreExpectedText="READ MORE";
         String readMoreActualText= userHomepage.sliderItemReadmore.getText();
         ReusableMethods.wait(5);
-        Assert.assertEquals(readMoreExpectedText,readMoreActualText);
+        Assert.assertEquals(readMoreActualText,readMoreExpectedText);
         ReusableMethods.wait(5);
         Assert.assertTrue(userHomepage.sliderItemReadmore.isEnabled());
 
@@ -97,7 +94,7 @@ public class US_03_Body {
         Assert.assertTrue(userHomepage.bodyFeaturedPackagesThirdItem.isDisplayed());
         Assert.assertTrue(userHomepage.bodyFeaturedPackagesThirdItem.isEnabled());
 
-        userHomepage.bodyFeaturedPackagesRighButton.click();
+        userHomepage.bodyFeaturedPackagesRightButton.click();
 
         ReusableMethods.wait(1);
 
