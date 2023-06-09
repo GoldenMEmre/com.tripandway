@@ -7,14 +7,16 @@ import org.testng.annotations.Test;
 import pages.UserHomepage;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.TestBaseRapor;
 
-public class US_01_Home {
+public class US_01_Home extends TestBaseRapor{
 
     @Test
     public void TC01() {
 
         // https://qa.tripandway.com/ adresine gidilir
         Driver.getDriver().get(ConfigReader.getProperty("tripUrl"));
+        extentTest=extentReports.createTest("tripandwaytestUrl");
 
         //Cookies kabul edilir
         UserHomepage userHomepage = new UserHomepage();
@@ -24,6 +26,7 @@ public class US_01_Home {
         String expectedUrl = "https://qa.tripandway.com/";
         String actualUrl = Driver.getDriver().getCurrentUrl();
         Assert.assertEquals(actualUrl,expectedUrl);
+        extentTest.pass("Url'in dogru oldugu test edildi");
 
         // Driver kapatilir
         Driver.closeDriver();
