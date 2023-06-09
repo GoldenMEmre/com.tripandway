@@ -6,7 +6,7 @@ import pages.UserHomepage;
 import utilities.*;
 
 
-public class US_06 {
+public class US_06 extends TestBaseRapor {
 
     @Test
     public void TC06() throws InterruptedException {
