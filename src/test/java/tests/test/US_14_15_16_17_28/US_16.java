@@ -5,8 +5,9 @@ import org.testng.annotations.Test;
 import pages.UserHomepage;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.TestBaseRapor;
 
-public class US_16 {
+public class US_16 extends TestBaseRapor {
 
     UserHomepage userHomepage = new UserHomepage();
 
