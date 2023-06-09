@@ -708,7 +708,7 @@ public class UserHomepage {
     // body featured packages right button
 
     @FindBy(xpath = "(//div[@class='owl-dot active'])[2]")
-    public WebElement bodyFeaturedPackagesRighButton;
+    public WebElement bodyFeaturedPackagesRightButton;
 
     @FindBy(xpath = "//input[@name='visitor_name']")
     public WebElement menuContactNameBox;
