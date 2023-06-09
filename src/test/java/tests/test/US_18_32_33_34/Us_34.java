@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import pages.AdminDashboard;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.ReusableMethods;
 
 import java.util.Set;
 
@@ -21,8 +22,12 @@ public class Us_34 {
         String expectedTitle = "Login";
         Assert.assertEquals(expectedTitle,Driver.getDriver().getTitle());
 
+        ReusableMethods.wait(1);
         // EmailBox'a email girilir
-        adminDashboard.adminEmailBox.sendKeys(ConfigReader.getProperty("admin03Email"));
+        ReusableMethods.waitForVisibility(adminDashboard.adminEmailBox,2);
+        adminDashboard.adminEmailBox.sendKeys(ConfigReader.getProperty("admin01Email"));
+
+        ReusableMethods.wait(1);
 
         // PasswordBox'a password girilir
         adminDashboard.adminPasswordBox.sendKeys(ConfigReader.getProperty("adminPassword"));
