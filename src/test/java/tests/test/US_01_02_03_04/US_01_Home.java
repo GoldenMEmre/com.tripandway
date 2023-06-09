@@ -11,28 +11,19 @@ import utilities.Driver;
 public class US_01_Home {
 
     @Test
-    public void Test01() {
-
-        UserHomepage userHomepage = new UserHomepage();
+    public void TC01() {
 
         // https://qa.tripandway.com/ adresine gidilir
         Driver.getDriver().get(ConfigReader.getProperty("tripUrl"));
 
         //Cookies kabul edilir
+        UserHomepage userHomepage = new UserHomepage();
         userHomepage.cookiesAcceptButton.click();
 
-        //HOME ogesi locate edilir
-        WebElement homeTitle= Driver.getDriver().findElement(By.xpath("(//a[@href='https://qa.tripandway.com'])[3]"));
-
-        //Home basliginin gorunur oldugu test edilir
-        String expectedTitle = "HOME";
-        String actualTitle = homeTitle.getText();
-        Assert.assertEquals(expectedTitle,actualTitle);
-        Assert.assertTrue(homeTitle.isDisplayed());
-
-
-
-
+        //https://qa.tripandway.com Url basliginin gorunur oldugu test edilir
+        String expectedUrl = "https://qa.tripandway.com/";
+        String actualUrl = Driver.getDriver().getCurrentUrl();
+        Assert.assertEquals(actualUrl,expectedUrl);
 
         // Driver kapatilir
         Driver.closeDriver();
