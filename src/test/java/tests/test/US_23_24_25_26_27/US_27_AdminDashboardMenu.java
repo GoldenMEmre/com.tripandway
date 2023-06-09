@@ -5,8 +5,9 @@ import org.testng.annotations.Test;
 import pages.AdminDashboard;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.TestBaseRapor;
 
-public class US_27_AdminDashboardMenu {
+public class US_27_AdminDashboardMenu  extends TestBaseRapor {
 
     @Test
     public void adminGirisSonrasiButonTiklama() throws InterruptedException {
