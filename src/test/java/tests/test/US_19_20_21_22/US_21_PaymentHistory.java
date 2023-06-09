@@ -4,12 +4,9 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.UserDashboard;
 import pages.UserHomepage;
-import utilities.ConfigReader;
-import utilities.Driver;
-import utilities.JSUtilities;
-import utilities.ReusableMethods;
+import utilities.*;
 
-public class US_21_PaymentHistory {
+public class US_21_PaymentHistory extends TestBaseRapor {
     @Test
     public void TC27()  {
 
