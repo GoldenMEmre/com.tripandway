@@ -48,5 +48,7 @@ public class US_41_AdminLogoaut extends TestBaseRapor {
         //Ana sayfaya donmuyor, Bag var
         Assert.assertEquals(actualTitle,expectedTitle);
 
+        Driver.closeDriver();
+
     }}
 
