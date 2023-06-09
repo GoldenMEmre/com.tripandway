@@ -8,8 +8,9 @@ import pages.AdminDashboard;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
+import utilities.TestBaseRapor;
 
-public class US_36_SubscribersSendEmail {
+public class US_36_SubscribersSendEmail extends TestBaseRapor {
 
     @Test
     public void TC_55() throws InterruptedException {
