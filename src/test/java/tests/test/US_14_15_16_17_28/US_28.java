@@ -6,8 +6,9 @@ import pages.AdminDashboard;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
+import utilities.TestBaseRapor;
 
-public class US_28 {
+public class US_28 extends TestBaseRapor {
 
     AdminDashboard adminDashboard = new AdminDashboard();
     String expectedTestData = "";

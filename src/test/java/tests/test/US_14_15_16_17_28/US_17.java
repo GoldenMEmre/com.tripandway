@@ -8,8 +8,9 @@ import pages.UserHomepage;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
+import utilities.TestBaseRapor;
 
-public class US_17 {
+public class US_17 extends TestBaseRapor {
     UserHomepage userHomepage = new UserHomepage();
     Actions actions = new Actions(Driver.getDriver());
     String actualTestData = "";
