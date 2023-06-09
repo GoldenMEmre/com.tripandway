@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import pages.UserHomepage;
 import utilities.*;
 
-public class US_12 {
+public class US_12 extends TestBaseRapor {
 
     @Test
     public void TC14(){
