@@ -1,6 +1,8 @@
 package tests.test.US_05_06_12_29;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -25,6 +27,9 @@ public class US_29 {
         admin.adminPasswordBox.sendKeys(ConfigReader.getProperty("adminPassword"));
         //"Login" butonuna tiklanir.
         admin.adminLoginButton.click();
+        //"Admin Panel" yazisinin görülebildigi dogrulanir.
+        WebElement adminPanel = Driver.getDriver().findElement(By.xpath("//div[text()='Admin Panel']"));
+        Assert.assertTrue(adminPanel.isDisplayed());
     }
 
     @Test(dependsOnMethods = "TC40")
