@@ -5,8 +5,9 @@ import org.testng.annotations.Test;
 import pages.UserHomepage;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.TestBaseRapor;
 
-public class US_14 {
+public class US_14 extends TestBaseRapor {
     UserHomepage userHomepage = new UserHomepage();
 
     // Kullanici anasayfaya gidebilmeli ve anasayfaya eristigini dogrulamali
