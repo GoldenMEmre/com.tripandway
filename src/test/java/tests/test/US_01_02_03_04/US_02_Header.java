@@ -6,8 +6,9 @@ import org.testng.annotations.Test;
 import pages.UserHomepage;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.TestBaseRapor;
 
-public class US_02_Header {
+public class US_02_Header extends TestBaseRapor {
 
     @Test
     public void TC02 (){
