@@ -8,8 +8,9 @@ import pages.UserHomepage;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
+import utilities.TestBaseRapor;
 
-public class US_10_TermsAndConditions {
+public class US_10_TermsAndConditions extends TestBaseRapor {
     /*
         Bir ziyaretçi olarak sitenin şartlar ve koşullar sayfasını görüntüleyebildiğimi doğrulayabilmeliyim
      */

@@ -6,8 +6,9 @@ import org.testng.annotations.Test;
 import pages.AdminDashboard;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.TestBaseRapor;
 
-public class US_31_AdminPackages {
+public class US_31_AdminPackages extends TestBaseRapor {
     /*
         Admin girişi yaptıktan sonra Packages kısmına yeni package ekleyip
         eklediğim package'in düzenlenebildiğini ve silinebildiğini sırayla doğrulayabilmeliyim

@@ -3,13 +3,10 @@ package tests.test.US_05_06_12_29;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.UserHomepage;
-import utilities.ConfigReader;
-import utilities.Driver;
-import utilities.JSUtilities;
-import utilities.ReusableMethods;
+import utilities.*;
 
 
-public class US_06 {
+public class US_06 extends TestBaseRapor {
 
     @Test
     public void TC06() throws InterruptedException {

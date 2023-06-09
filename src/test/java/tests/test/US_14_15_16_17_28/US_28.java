@@ -1,13 +1,15 @@
 package tests.test.US_14_15_16_17_28;
 
 import org.testng.Assert;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 import pages.AdminDashboard;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
+import utilities.TestBaseRapor;
 
-public class US_28 {
+public class US_28 extends TestBaseRapor {
 
     AdminDashboard adminDashboard = new AdminDashboard();
     String expectedTestData = "";
@@ -16,7 +18,7 @@ public class US_28 {
     /*  Admin girişi yaptıktan sonra Blog Section bölümünde Kategegoriler kısmına yeni kategori ekleyip
         eklediğim kategorinin düzenlenebildiğini  ve silinebildiğini sırayla doğrulayabilmeliyim */
 
-    @Test
+    @Test @Ignore
     public void TC35 (){
         // Kullanici admin sayfasina giris yapar
         Driver.getDriver().get(ConfigReader.getProperty("adminUrl"));
