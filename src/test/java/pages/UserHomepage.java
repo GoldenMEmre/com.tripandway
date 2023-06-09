@@ -699,7 +699,7 @@ public class UserHomepage {
     @FindBy(xpath = "//div[@class='toast-message']")
     public WebElement regAlreadyExistsMassage;
 
-<<<<<<< HEAD
+
     // body featured packages left button
 
     @FindBy(xpath = "(//div[@class='owl-dot'])[3]")
@@ -709,12 +709,12 @@ public class UserHomepage {
 
     @FindBy(xpath = "(//div[@class='owl-dot active'])[2]")
     public WebElement bodyFeaturedPackagesRighButton;
-=======
+
     @FindBy(xpath = "//input[@name='visitor_name']")
     public WebElement menuContactNameBox;
 
     @FindBy(xpath = "//div[@aria-live = 'polite']")
     public WebElement contactMessageGonderildiOkeyi;
->>>>>>> main
+
 }
 
