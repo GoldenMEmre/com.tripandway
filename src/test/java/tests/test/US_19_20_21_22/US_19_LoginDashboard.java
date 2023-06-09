@@ -4,12 +4,9 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.UserDashboard;
 import pages.UserHomepage;
-import utilities.ConfigReader;
-import utilities.Driver;
-import utilities.JSUtilities;
-import utilities.ReusableMethods;
+import utilities.*;
 
-public class US_19_LoginDashboard {
+public class US_19_LoginDashboard extends TestBaseRapor {
     @Test
     public void TC25() {
 
