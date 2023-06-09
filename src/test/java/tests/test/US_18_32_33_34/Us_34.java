@@ -48,7 +48,7 @@ public class Us_34 {
         Driver.getDriver().switchTo().window(secondWH);
         Assert.assertTrue(adminDashboard.ordersFirstOrderPrintInvoiceButton.isDisplayed());
 
-        // Quit to Browser
+        // Quit to Browser.
         Driver.quitDriver();
 
     }
