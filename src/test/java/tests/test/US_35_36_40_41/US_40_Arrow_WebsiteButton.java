@@ -7,10 +7,11 @@ import pages.AdminDashboard;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
+import utilities.TestBaseRapor;
 
 import java.util.Set;
 
-public class US_40_Arrow_WebsiteButton {
+public class US_40_Arrow_WebsiteButton extends TestBaseRapor {
 
     @Test
     public void TC_59() {
@@ -73,7 +74,6 @@ public class US_40_Arrow_WebsiteButton {
 
         ReusableMethods.switchToWindow("Tripandway");
 
-
         // "Visit Webseite" butonun calisip calismadigi dogrulanir.
         // Verify whether the "visit Webseite" button works.
         Set<String> window= Driver.getDriver().getWindowHandles();
@@ -81,10 +81,8 @@ public class US_40_Arrow_WebsiteButton {
         for (String eachWindow:window) {
 
             if ( ! firsWebSiteWH.equals(eachWindow)) {
-
             }
         }
-
         String expectedTitle= "Tripandway";
         String actualTitle= Driver.getDriver().getTitle();
 
