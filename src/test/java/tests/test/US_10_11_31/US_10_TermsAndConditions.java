@@ -15,7 +15,7 @@ public class US_10_TermsAndConditions {
      */
 
     @Test
-    public void TC_12() {
+    public void TC12() {
         // browser ile tripandway anasayfaya gidilir
         Driver.getDriver().get(ConfigReader.getProperty("tripUrl"));
 

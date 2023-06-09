@@ -10,14 +10,16 @@ public class UserDashboard {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
-
+    //Login Dashboard sayfasina basarili giris elementi
     @FindBy(xpath = "//*[text()='Completed Orders']")
     public WebElement successfullLogin;
+
+
     @FindBy(xpath = "(//*[text()='Completed'])[1]")
     public WebElement paymentHistoryCompleted;
 
 
-
+    //Login Dashboard sayfasindaki Update Profile elementi
     @FindBy(xpath = "//a[text()='Update Profile']")
     public WebElement updateProfileButton;
 
@@ -110,7 +112,7 @@ public class UserDashboard {
     public WebElement logoutButton;
 
 
-    @FindBy(xpath = "//button[@type='submit']")
+    @FindBy(xpath = "//button[@class='btn btn-info btn-lg']")
     public WebElement packagesBookYourSeatButton;
 
 
@@ -139,6 +141,10 @@ public class UserDashboard {
 
     @FindBy(xpath = "//tbody//tr[2]//td[5]")
     public WebElement packagesPaySuccessf;
+
+
+    @FindBy (xpath ="//iframe[@class='stripe_checkout_app']")
+    public WebElement packagesPayIframe;
 
 
 
