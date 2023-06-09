@@ -10,8 +10,9 @@ import pages.AdminDashboard;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
+import utilities.TestBaseRapor;
 
-public class US_29 {
+public class US_29 extends TestBaseRapor {
 
     @Test
     public void TC40(){
