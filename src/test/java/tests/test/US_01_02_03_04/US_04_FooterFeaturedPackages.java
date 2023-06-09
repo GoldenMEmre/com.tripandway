@@ -3,12 +3,9 @@ package tests.test.US_01_02_03_04;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.UserHomepage;
-import utilities.ConfigReader;
-import utilities.Driver;
-import utilities.JSUtilities;
-import utilities.ReusableMethods;
+import utilities.*;
 
-public class US_04_FooterFeaturedPackages {
+public class US_04_FooterFeaturedPackages extends TestBaseRapor {
 
     @Test
     public void TC04() throws InterruptedException {
