@@ -82,7 +82,7 @@ public class UserHomepage {
 
 
     // Body Item Slider
-    @FindBy(xpath = "(//div[@class='slider-bg'])[5]")
+    @FindBy(xpath = "//*[@class='slider']")
     public WebElement sliderItem;
 
     // Slider Item Next Button
@@ -94,7 +94,7 @@ public class UserHomepage {
     public WebElement sliderItemPrev;
 
     // Slider Item Read Read More Button
-    @FindBy(xpath = "(//*[text()='Read More'])[1]")
+    @FindBy(xpath = "(//a[contains(text(),'Read More')])[4]")
     public WebElement sliderItemReadmore;
 
 
@@ -103,7 +103,7 @@ public class UserHomepage {
 
 
     // Body Title Our Services
-    @FindBy(xpath = "(//div[@class='headline'])[1]")
+    @FindBy(xpath = "//*[contains(text(),'OUR SERVICES')]")
     public WebElement bodyOurServices;
 
 
@@ -111,7 +111,7 @@ public class UserHomepage {
     @FindBy(xpath = "(//h4)[1]")
     public WebElement bodyOurServicesFirstItem;
 
-    // Body Item Our Services Advantage Tour
+    // Body Item Our Services Adventure Tour
     @FindBy(xpath = "(//h4)[2]")
     public WebElement bodyOurServicesSecondItem;
 
@@ -137,7 +137,7 @@ public class UserHomepage {
 
     // Body Title Featured Packages
     @FindBy(xpath = "(//div[@class='headline'])[2]")
-    public WebElement bodyFeaturedPackages;
+    public WebElement bodyFeaturedPackagesTitle;
 
     //Featured Packages First Item
     @FindBy(xpath = "(//h4)[7]")
@@ -169,7 +169,7 @@ public class UserHomepage {
 
     //Body Destination Title
     @FindBy(xpath = "(//div[@class='headline'])[3]")
-    public WebElement bodyTitleDestination;
+    public WebElement bodyDestinationTitle;
 
     //Body Destination Item First
     @FindBy(xpath = "(//div[@class='photo-title'])[1]")
@@ -193,7 +193,7 @@ public class UserHomepage {
 
     //Body Destination Item Third Buyutme
     @FindBy(xpath = "(//a[@class='magnific'])[3]")
-    public WebElement bodyDestinationBangkokThirdItemMagnify;
+    public WebElement bodyDestinationThirdItemMagnify;
 
     //Body Destination Item Fourth
     @FindBy(xpath = "(//div[@class='photo-title'])[4]")
@@ -247,7 +247,7 @@ public class UserHomepage {
 
     // member1 twitter link
     @FindBy(xpath = "(//div[@class='team-social'])[5]//ul//li[2]")
-    public WebElement bodyTeamMemberTwitterLink;
+    public WebElement bodyTeamMember1TwitterLink;
 
     //member1 instagram link
     @FindBy(xpath = "(//div[@class='team-social'])[5]//ul//li[3]")
@@ -376,7 +376,7 @@ public class UserHomepage {
 
     //Body Our Client Title
     @FindBy(xpath = "(//div[@class='headline'])[7]")
-    public WebElement bodyOurClintTitle;
+    public WebElement bodyOurClientTitle;
 
 
 
@@ -699,10 +699,22 @@ public class UserHomepage {
     @FindBy(xpath = "//div[@class='toast-message']")
     public WebElement regAlreadyExistsMassage;
 
+<<<<<<< HEAD
+    // body featured packages left button
+
+    @FindBy(xpath = "(//div[@class='owl-dot'])[3]")
+    public WebElement bodyFeaturedPackagesLeftButton;
+
+    // body featured packages right button
+
+    @FindBy(xpath = "(//div[@class='owl-dot active'])[2]")
+    public WebElement bodyFeaturedPackagesRighButton;
+=======
     @FindBy(xpath = "//input[@name='visitor_name']")
     public WebElement menuContactNameBox;
 
     @FindBy(xpath = "//div[@aria-live = 'polite']")
     public WebElement contactMessageGonderildiOkeyi;
+>>>>>>> main
 }
 
