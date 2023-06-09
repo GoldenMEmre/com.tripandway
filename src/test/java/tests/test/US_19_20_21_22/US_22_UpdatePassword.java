@@ -9,7 +9,7 @@ import utilities.Driver;
 import utilities.JSUtilities;
 import utilities.ReusableMethods;
 
-public class US_22 {
+public class US_22_UpdatePassword {
     @Test
     public void TC_28(){
 

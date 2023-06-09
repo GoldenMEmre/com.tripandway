@@ -9,7 +9,7 @@ import utilities.Driver;
 import utilities.JSUtilities;
 import utilities.ReusableMethods;
 
-public class US_21 {
+public class US_21_PaymentHistory {
     @Test
     public void TC27()  {
 

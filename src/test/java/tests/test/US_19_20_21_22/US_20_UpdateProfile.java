@@ -9,7 +9,7 @@ import utilities.Driver;
 import utilities.JSUtilities;
 import utilities.ReusableMethods;
 
-public class US_20 {
+public class US_20_UpdateProfile {
     @Test
     public void TC26()  {
 
