@@ -8,8 +8,9 @@ import pages.UserHomepage;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
+import utilities.TestBaseRapor;
 
-public class US_11_PrivacyPolicy {
+public class US_11_PrivacyPolicy extends TestBaseRapor {
     /*
         Bir ziyaretçi olarak  sitenin gizlilik politikalarının sayfasını görüntüleyebildiğimi doğrulayabilmeliyim
     */
