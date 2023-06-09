@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Istenen class'lari calistirma">
+
+    <test name="smokeTest">
+
+        <classes>
+            <class name="tests.test.US_01_02_03_04.US_02_Header"></class>
+            <class name="tests.test.US_19_20_21_22.US_21_PaymentHistory"></class>
+            <class name="tests.test.US_23_24_25_26_27.US_24_Payment"></class>
+            <class name="tests.test.US_14_15_16_17_28.US_28"></class>
+            <class name="tests.test.US_08_09_30.US_30_AdminDestination"></class>
+            <class name="tests.test.US_18_32_33_34.Us_34"></class>
+            <class name="tests.test.US_07_13_37_38_39.US_38_AdminPassword"></class>
+            <class name="tests.test.US_35_36_40_41.US_41_AdminLogoaut"></class>
+
+
+        </classes>
+
+    </test>
+
+</suite>
