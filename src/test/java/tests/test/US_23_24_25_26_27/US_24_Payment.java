@@ -7,9 +7,10 @@ import pages.UserDashboard;
 import pages.UserHomepage;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.TestBaseRapor;
 
 
-public class US_24_Payment {
+public class US_24_Payment extends TestBaseRapor {
 
 
     @Test
