@@ -5,8 +5,9 @@ import org.testng.annotations.Test;
 import pages.AdminDashboard;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.TestBaseRapor;
 
-public class US_41_AdminLogoaut {
+public class US_41_AdminLogoaut extends TestBaseRapor {
 
     @Test
     public void TC_61() {
@@ -46,5 +47,6 @@ public class US_41_AdminLogoaut {
 
         //Ana sayfaya donmuyor, Bag var
         Assert.assertEquals(actualTitle,expectedTitle);
+
     }}
 
