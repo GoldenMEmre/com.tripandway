@@ -6,7 +6,7 @@ import pages.AdminDashboard;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-public class Us_32 {
+public class US_32 {
     AdminDashboard adminDashboard = new AdminDashboard();
 
     @Test

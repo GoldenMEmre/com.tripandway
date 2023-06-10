@@ -5,29 +5,26 @@ import org.testng.annotations.Test;
 import pages.AdminDashboard;
 import utilities.ConfigReader;
 import utilities.Driver;
-import utilities.ReusableMethods;
 
 import java.util.Set;
 
-public class Us_34 {
+public class US_33 {
+
     AdminDashboard adminDashboard = new AdminDashboard();
 
     @Test
-    public void tc53(){
+    public void tc52(){
         // Go to "https://qa.tripandway.com/admin/login"
-        Driver.getDriver().get(ConfigReader.getProperty("adminUrl"));
-        String firstWH = Driver.getDriver().getWindowHandle();
 
-        // Acilan sayfanin basliginin "Login" oldugu dogrulanmali
-        String expectedTitle = "Login";
+        Driver.getDriver().get(ConfigReader.getProperty("adminUrl"));
+        String firstWH= Driver.getDriver().getWindowHandle();
+
+        // sayfanin basliginin "Login" oldugu dogrulanir
+        String expectedTitle= "Login";
         Assert.assertEquals(expectedTitle,Driver.getDriver().getTitle());
 
-        ReusableMethods.wait(1);
         // EmailBox'a email girilir
-        ReusableMethods.waitForVisibility(adminDashboard.adminEmailBox,2);
-        adminDashboard.adminEmailBox.sendKeys(ConfigReader.getProperty("admin01Email"));
-
-        ReusableMethods.wait(1);
+        adminDashboard.adminEmailBox.sendKeys(ConfigReader.getProperty("admin03Email"));
 
         // PasswordBox'a password girilir
         adminDashboard.adminPasswordBox.sendKeys(ConfigReader.getProperty("adminPassword"));
@@ -38,23 +35,22 @@ public class Us_34 {
         // "Order" butonuna tiklanir
         adminDashboard.adminPanelOrderButton.click();
 
-        // ilk siparisteki "Invoice" butonuna tiklanir
-        adminDashboard.ordersFirstOrderInvoiceButton.click();
+        // ilk siparisteki "Detail" butonuna tiklanir
+        adminDashboard.ordersFirstOrderDetailButton.click();
 
-        // Acilan yeni sekmede "Print Invoice" butonunun gorunur oldugu dogrulanir.
-        String secondWH = "";
+        // Acilan yeni sekmede "Order Detail" yazisinin gurunur oldugu dogrulanir
+        String secondWH="";
         Set<String> WhSet = Driver.getDriver().getWindowHandles();
-        for (String eachWh: WhSet
+        for (String eachWH: WhSet
              ) {
-            if (!eachWh.equals(firstWH)){
-                secondWH=eachWh;
+            if (!eachWH.equals(firstWH)){
+                secondWH=eachWH;
             }
         }
         Driver.getDriver().switchTo().window(secondWH);
-        Assert.assertTrue(adminDashboard.ordersFirstOrderPrintInvoiceButton.isDisplayed());
+        Assert.assertTrue(adminDashboard.ordersFirstOrderDetailTitle.isDisplayed());
 
-        // Quit to Browser.
+        // Close to Browser
         Driver.quitDriver();
-
     }
 }

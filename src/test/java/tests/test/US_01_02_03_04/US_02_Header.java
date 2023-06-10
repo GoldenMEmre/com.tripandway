@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import pages.UserHomepage;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.ReusableMethods;
 import utilities.TestBaseRapor;
 
 public class US_02_Header extends TestBaseRapor {
@@ -18,7 +19,14 @@ public class US_02_Header extends TestBaseRapor {
 
         //Cookies kabul edilir
         UserHomepage userHomepage = new UserHomepage();
+
+        // 2 saniye bekler
+        ReusableMethods.wait(2);
+
         userHomepage.cookiesAcceptButton.click();
+
+        // 2 saniye bekler
+        ReusableMethods.wait(4);
 
         //Header bolumundeki iletişim bilgilerinin gorunur oldugu test edilir
         Assert.assertTrue(userHomepage.headerConnection.isDisplayed());
