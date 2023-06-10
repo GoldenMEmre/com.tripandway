@@ -45,7 +45,7 @@ public class US_07_footerSocialMedia {
         //instagram ikonunun görünür oldugu dogrulanir
         Assert.assertTrue(userHomePage.footerAddressSocialInstagram.isDisplayed()&& userHomePage.footerAddressSocialInstagram.isEnabled());
 
-
+        Driver.closeDriver();
 
 
 
