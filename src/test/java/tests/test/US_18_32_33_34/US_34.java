@@ -9,7 +9,7 @@ import utilities.ReusableMethods;
 
 import java.util.Set;
 
-public class Us_34 {
+public class US_34 {
     AdminDashboard adminDashboard = new AdminDashboard();
 
     @Test
@@ -31,15 +31,20 @@ public class Us_34 {
 
         // PasswordBox'a password girilir
         adminDashboard.adminPasswordBox.sendKeys(ConfigReader.getProperty("adminPassword"));
+        ReusableMethods.wait(1);
 
         // "Login" butonuna tiklanir
         adminDashboard.adminLoginButton.click();
+        ReusableMethods.wait(1);
 
         // "Order" butonuna tiklanir
         adminDashboard.adminPanelOrderButton.click();
+        ReusableMethods.wait(1);
 
         // ilk siparisteki "Invoice" butonuna tiklanir
         adminDashboard.ordersFirstOrderInvoiceButton.click();
+        ReusableMethods.wait(2);
+
 
         // Acilan yeni sekmede "Print Invoice" butonunun gorunur oldugu dogrulanir.
         String secondWH = "";
@@ -52,6 +57,7 @@ public class Us_34 {
         }
         Driver.getDriver().switchTo().window(secondWH);
         Assert.assertTrue(adminDashboard.ordersFirstOrderPrintInvoiceButton.isDisplayed());
+        ReusableMethods.wait(2);
 
         // Quit to Browser.
         Driver.quitDriver();

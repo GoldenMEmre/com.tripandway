@@ -7,7 +7,7 @@ import pages.UserHomepage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-public class Us_18 {
+public class US_18 {
 
     UserHomepage userHomepage = new UserHomepage();
     @Test
