@@ -12,7 +12,7 @@ import utilities.Driver;
 import utilities.ReusableMethods;
 import utilities.TestBaseRapor;
 
-public class US_29 extends TestBaseRapor {
+public class US_29 {
 
     @Test
     public void TC40(){
