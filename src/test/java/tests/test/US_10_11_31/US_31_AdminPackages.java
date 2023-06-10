@@ -15,6 +15,7 @@ public class US_31_AdminPackages extends TestBaseRapor {
         eklediğim package'in düzenlenebildiğini ve silinebildiğini sırayla doğrulayabilmeliyim
      */
 
+
     @Test
     public void TC47() {
         //browser ile 'https://qa.tripandway.com/admin/login' sayfasina gidilir

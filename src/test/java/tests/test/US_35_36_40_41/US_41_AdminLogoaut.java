@@ -65,6 +65,7 @@ public class US_41_AdminLogoaut extends TestBaseRapor {
         adminDashboard.adminDropDownLogoutButton.click();
         extentTest.info("Acilan sekmeden Logout Butonuna tiklar.");
 
+
         ReusableMethods.wait(2);
 
 

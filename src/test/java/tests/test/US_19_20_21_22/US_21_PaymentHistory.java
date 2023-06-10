@@ -24,6 +24,7 @@ public class US_21_PaymentHistory extends TestBaseRapor {
         //Login linkine tiklayin
         userHomepage.loginLink.click();
 
+
         // 2 saniye bekler
         ReusableMethods.wait(2);
 

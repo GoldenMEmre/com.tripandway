@@ -14,6 +14,8 @@ public class US_02_Header extends TestBaseRapor {
     @Test
     public void TC02 (){
 
+        extentTest = extentReports.createTest("Header Test", "Header kismindaki menu butonlari gorunur ve aktif olmali");
+
         // https://qa.tripandway.com/ adresine gidilir
         Driver.getDriver().get(ConfigReader.getProperty("tripUrl"));
 
@@ -24,6 +26,7 @@ public class US_02_Header extends TestBaseRapor {
         ReusableMethods.wait(2);
 
         userHomepage.cookiesAcceptButton.click();
+
 
         // 2 saniye bekler
         ReusableMethods.wait(4);
@@ -89,6 +92,8 @@ public class US_02_Header extends TestBaseRapor {
         String contactActualText = userHomepage.menuContact.getText();
         Assert.assertEquals(contactActualText,contactExpectedText);
         Assert.assertTrue(userHomepage.menuContact.isEnabled());
+
+        extentTest.pass("TEST PASSED");
 
         // Driver kapatilir
         Driver.closeDriver();

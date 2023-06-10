@@ -45,6 +45,7 @@ public class US_34 {
         adminDashboard.ordersFirstOrderInvoiceButton.click();
         ReusableMethods.wait(2);
 
+
         // Acilan yeni sekmede "Print Invoice" butonunun gorunur oldugu dogrulanir.
         String secondWH = "";
         Set<String> WhSet = Driver.getDriver().getWindowHandles();

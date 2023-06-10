@@ -66,6 +66,7 @@ public class US_24_Payment {
         // Book your seat butonunu tikla
         userDashboard.packagesBookYourSeatButton.submit();
 
+
         // 2 saniye bekler
         ReusableMethods.wait(2);
 
@@ -78,6 +79,8 @@ public class US_24_Payment {
 
         Driver.getDriver().switchTo().frame(userDashboard.packagesPayIframe);
 
+
+        // userDashboard.packagesPayCardNumber.sendKeys(ConfigReader.getProperty("cardNumber"));
         // karnumarasi gir
         userDashboard.packagesPayCardNumber.sendKeys("4242");
         // 2 saniye bekler
@@ -95,6 +98,8 @@ public class US_24_Payment {
         // 2 saniye bekler
         ReusableMethods.wait(1);
 
+
+        // userDashboard.packagesPayCardDate.sendKeys(ConfigReader.getProperty("cardDate"));
         // kartin son kullanma tarihini gir
         userDashboard.packagesPayCardDate.sendKeys("12");
         // 2 saniye bekler
