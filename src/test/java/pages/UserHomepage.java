@@ -495,7 +495,7 @@ public class UserHomepage {
     public WebElement footerAddressSocialPinterest;
 
 
-    @FindBy(xpath = "(//a[@target='_blank'])[41]")
+    @FindBy(xpath = "(//a[@target='_blank'])[42]")
     public WebElement footerAddressSocialInstagram;
 
 
