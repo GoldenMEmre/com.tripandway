@@ -41,6 +41,7 @@ public class US_34 {
         adminDashboard.adminPanelOrderButton.click();
         ReusableMethods.wait(1);
 
+
         // ilk siparisteki "Invoice" butonuna tiklanir
         adminDashboard.ordersFirstOrderInvoiceButton.click();
         ReusableMethods.wait(2);

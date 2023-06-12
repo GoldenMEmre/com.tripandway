@@ -16,6 +16,7 @@ public class Us_32  extends TestBaseRapor {
 
     @Test
     public void tc51() {
+
         extentTest = extentReports.createTest("Admin sayfasi Order bulumu kontrol testi");
         // Go to https://qa.tripandway.com/admin/login
         Driver.getDriver().get(ConfigReader.getProperty("adminUrl"));

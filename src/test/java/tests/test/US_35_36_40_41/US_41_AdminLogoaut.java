@@ -52,6 +52,7 @@ public class US_41_AdminLogoaut extends TestBaseRapor {
         ReusableMethods.wait(2);
 
 
+
         // Sayfanin sag ust kismindaki "Admin" butonuna tiklanir.
         //click on the "Admin" button at the top right of the page.
         adminDashboard.adminDropdownMenu.click();

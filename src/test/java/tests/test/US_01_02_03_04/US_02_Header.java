@@ -28,11 +28,14 @@ public class US_02_Header extends TestBaseRapor {
         userHomepage.cookiesAcceptButton.click();
 
 
+
         // 2 saniye bekler
         ReusableMethods.wait(4);
 
         //Header bolumundeki iletişim bilgilerinin gorunur oldugu test edilir
         Assert.assertTrue(userHomepage.headerConnection.isDisplayed());
+
+
 
         //Header bolumundeki registration ve login linklerinin gorunur ve aktif olduğu test edilir
         Assert.assertTrue(userHomepage.headerRegAndLog.isDisplayed());
