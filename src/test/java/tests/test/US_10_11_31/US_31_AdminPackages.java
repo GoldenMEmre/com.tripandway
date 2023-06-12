@@ -35,6 +35,7 @@ public class US_31_AdminPackages extends TestBaseRapor {
 
         ReusableMethods.wait(2);
 
+
         //Login butonuna basilir
         adminDashboard.adminLoginButton.click();
 
@@ -48,6 +49,7 @@ public class US_31_AdminPackages extends TestBaseRapor {
         String actualTitle = adminDashboard.adminPackagesTitle.getText();
 
         Assert.assertEquals(actualTitle,expectedTitle);
+
 
         //Sayfa kapatilir
         Driver.closeDriver();

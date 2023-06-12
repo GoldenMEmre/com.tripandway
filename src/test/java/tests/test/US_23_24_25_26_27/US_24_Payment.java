@@ -8,13 +8,18 @@ import pages.UserHomepage;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
+import utilities.TestBaseRapor;
+
+import java.io.IOException;
 
 
-public class US_24_Payment {
+public class US_24_Payment extends TestBaseRapor {
 
 
     @Test
-    public void paymentTest() {
+    public void paymentTest() throws IOException {
+
+        extentReports.createTest("Payment Test","Kullanici sectigi package'i odeyebilmeli");
 
         UserHomepage userHomepage = new UserHomepage();
 
@@ -80,31 +85,35 @@ public class US_24_Payment {
         Driver.getDriver().switchTo().frame(userDashboard.packagesPayIframe);
 
 
-        // userDashboard.packagesPayCardNumber.sendKeys(ConfigReader.getProperty("cardNumber"));
-        // karnumarasi gir
-        userDashboard.packagesPayCardNumber.sendKeys("4242");
-        // 2 saniye bekler
-        ReusableMethods.wait(1);
-        userDashboard.packagesPayCardNumber.sendKeys("4242");
-        // 2 saniye bekler
-        ReusableMethods.wait(1);
-        userDashboard.packagesPayCardNumber.sendKeys("4242");
-        // 2 saniye bekler
-        ReusableMethods.wait(1);
-        userDashboard.packagesPayCardNumber.sendKeys("4242");
-        // 2 saniye bekler
-        ReusableMethods.wait(1);
+
+
+    //   userDashboard.packagesPayCardNumber.sendKeys(ConfigReader.getProperty("cardNumber"));
+    //   extentTest.info("Card Number 42424242424242 olarak gonderilir");
+
+      // karnumarasi gir
+      userDashboard.packagesPayCardNumber.sendKeys("4242");
+      // 2 saniye bekler
+      ReusableMethods.wait(1);
+      userDashboard.packagesPayCardNumber.sendKeys("4242");
+      // 2 saniye bekler
+      ReusableMethods.wait(1);
+      userDashboard.packagesPayCardNumber.sendKeys("4242");
+      // 2 saniye bekler
+      ReusableMethods.wait(1);
+      userDashboard.packagesPayCardNumber.sendKeys("4242");
+      // 2 saniye bekler
+      ReusableMethods.wait(1);
 
         // 2 saniye bekler
         ReusableMethods.wait(1);
 
 
-        // userDashboard.packagesPayCardDate.sendKeys(ConfigReader.getProperty("cardDate"));
-        // kartin son kullanma tarihini gir
-        userDashboard.packagesPayCardDate.sendKeys("12");
-        // 2 saniye bekler
-        ReusableMethods.wait(1);
-        userDashboard.packagesPayCardDate.sendKeys("34");
+       // userDashboard.packagesPayCardDate.sendKeys(ConfigReader.getProperty("cardDate"));
+     // kartin son kullanma tarihini gir
+     userDashboard.packagesPayCardDate.sendKeys("12");
+     // 2 saniye bekler
+     ReusableMethods.wait(1);
+     userDashboard.packagesPayCardDate.sendKeys("34");
 
         // 2 saniye bekler
         ReusableMethods.wait(2);
@@ -125,7 +134,7 @@ public class US_24_Payment {
         Driver.closeDriver();
 
 
-
+        extentTest.pass("Kullanici sectigi package'in odemesini basarili olarak gerceklestirir");
     }
 
 
