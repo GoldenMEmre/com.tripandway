@@ -168,6 +168,8 @@ public class AdminDashboard {
     public WebElement blogsSearchBox;
 
 
+    
+    
     @FindBy(xpath = "//tbody/tr/td[5]/a[1]")
     public WebElement blogsActionEditButton;
 
