@@ -11,7 +11,7 @@ import utilities.TestBaseRapor;
 
 public class US_01_Home extends TestBaseRapor{
 
-    @Test
+    @Test(groups = "grup1")
     public void TC01() {
 
         // https://qa.tripandway.com/ adresine gidilir

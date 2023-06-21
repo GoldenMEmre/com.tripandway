@@ -7,7 +7,7 @@ import utilities.*;
 
 public class US_12 extends TestBaseRapor {
 
-    @Test
+    @Test(groups = "grup2")
     public void TC14(){
         //Siteye erisim saglanir.
         Driver.getDriver().get(ConfigReader.getProperty("tripUrl"));

@@ -10,6 +10,7 @@ public class US_19_LoginDashboard extends TestBaseRapor {
     @Test
     public void TC25() {
 
+        extentTest = extentReports.createTest("US19LoginDashboardTC25","Kullanici dashboard'a basarili giris yapabilmeli");
         //https://qa.tripandway.com sitesine giris yapin
         Driver.getDriver().get(ConfigReader.getProperty("tripUrl"));
         UserHomepage userHomepage = new UserHomepage();
@@ -28,6 +29,7 @@ public class US_19_LoginDashboard extends TestBaseRapor {
         ReusableMethods.wait(3);
         // basarili olarak giris yapildigini test edin
         Assert.assertTrue(userDashboard.successfullLogin.isDisplayed());
+        extentTest.pass("Kullanici basarili sekilde giris yapabildi");
         Driver.closeDriver();
 
     }

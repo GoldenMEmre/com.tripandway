@@ -15,7 +15,7 @@ public class US_10_TermsAndConditions extends TestBaseRapor {
         Bir ziyaretçi olarak sitenin şartlar ve koşullar sayfasını görüntüleyebildiğimi doğrulayabilmeliyim
      */
 
-    @Test
+    @Test(groups = "grup1")
     public void TC12() {
         // browser ile tripandway anasayfaya gidilir
         Driver.getDriver().get(ConfigReader.getProperty("tripUrl"));
