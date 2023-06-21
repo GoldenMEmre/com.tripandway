@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="istenenClasslariCalistirma">
+    <test name="a">
+        <classes>
+            <class name="tests.test.US_08_09_30.US_08_FooterAdress"></class>
+            <class name="tests.test.US_10_11_31.US_10_TermsAndConditions"></class>
+        </classes>
+    </test>
+</suite>
